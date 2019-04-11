@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d5d970e-5e24-462c-88ab-f62f9a2c889f" name="Default" comment="4.11">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知识要点.md" />
+    <list default="true" id="2d5d970e-5e24-462c-88ab-f62f9a2c889f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/知识要点.md" afterPath="$PROJECT_DIR$/知识要点.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,13 +17,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="知识要点.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="知识要点.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/知识要点.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="848">
-                <caret line="134" column="14" lean-forward="false" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
-                <folding />
+              <first_editor relative-caret-position="841">
+                <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+                <folding>
+                  <marker date="1554976720000" expanded="true" signature="1084:1145" ph="..." />
+                  <marker date="1554976720000" expanded="true" signature="1362:1512" ph="..." />
+                  <marker date="1554976720000" expanded="true" signature="1382:1493" ph="..." />
+                  <marker date="1554976720000" expanded="true" signature="1564:2290" ph="..." />
+                  <marker date="1554976720000" expanded="true" signature="1581:2290" ph="..." />
+                  <marker date="1554976720000" expanded="true" signature="1595:2290" ph="..." />
+                  <marker date="1554976720000" expanded="true" signature="1615:2290" ph="..." />
+                  <marker date="1554976720000" expanded="true" signature="1636:2290" ph="..." />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
@@ -62,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_merchant.wxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add_merchant.wxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/add_merchant/add_merchant.wxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="648">
@@ -100,8 +107,8 @@
         <option value="$PROJECT_DIR$/html/sdf as.html" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/知识要点.md" />
         <option value="$PROJECT_DIR$/pages/add_merchant/add_merchant.wxml" />
+        <option value="$PROJECT_DIR$/知识要点.md" />
       </list>
     </option>
   </component>
@@ -185,7 +192,7 @@
       <workItem from="1554966609135" duration="476000" />
       <workItem from="1554967204089" duration="1056000" />
       <workItem from="1554971295367" duration="428000" />
-      <workItem from="1554971750510" duration="3707000" />
+      <workItem from="1554971750510" duration="4037000" />
     </task>
     <task id="LOCAL-00001" summary="4.11">
       <created>1554966667802</created>
@@ -201,11 +208,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554967067816</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="4.11">
+      <created>1554976393556</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554976393556</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5667000" />
+    <option name="totallyTimeSpent" value="5997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="235" y="23" width="2185" height="1186" extended-state="0" />
@@ -249,7 +263,16 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
+            <folding>
+              <marker date="1554976720000" expanded="true" signature="1084:1145" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1362:1512" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1382:1493" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1564:2290" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1581:2290" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1595:2290" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1615:2290" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1636:2290" ph="..." />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -294,7 +317,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1554976720000" expanded="true" signature="1084:1145" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1362:1512" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1382:1493" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1564:2290" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1581:2290" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1595:2290" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1615:2290" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1636:2290" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -354,23 +386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/知识要点.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="848">
-            <caret line="134" column="14" lean-forward="false" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/add_merchant/add_merchant.wxss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -384,6 +399,41 @@
         <state relative-caret-position="648">
           <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知识要点.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1554976720000" expanded="true" signature="1084:1145" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1362:1512" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1382:1493" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1564:2290" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1581:2290" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1595:2290" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1615:2290" ph="..." />
+            <marker date="1554976720000" expanded="true" signature="1636:2290" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="841">
+            <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+            <folding>
+              <marker date="1554976720000" expanded="true" signature="1084:1145" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1362:1512" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1382:1493" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1564:2290" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1581:2290" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1595:2290" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1615:2290" ph="..." />
+              <marker date="1554976720000" expanded="true" signature="1636:2290" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
