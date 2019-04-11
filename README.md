@@ -8,7 +8,8 @@ php + wx小程序。
 # 二 全局配置
   1、app.josn文件中配置文件路径，保存自动添加路径文件。<br>
   2、app.josn中还可以配置tabar导航：只能配置最少 2 个、最多 5 个 tab。<br>
-  `"tabBar": {
+  {% highlight script linenos %}
+    "tabBar": {
     "color" : "#727272",
     "selectedColor": "#FF1A1A",
     "list": [
@@ -37,5 +38,6 @@ php + wx小程序。
         "text": "我的"
       }
     ]
-  },`
+  },
+{% endhighlight %}
   3、在开发过程中需要调用微信权限时需要在app.json中配置。 例：<br>
