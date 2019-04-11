@@ -2,7 +2,6 @@
 const common = require('/utils/common.js')
 App({
   onLaunch: function () {
-
     var that = this;
     wx.checkSession({
       success() {
