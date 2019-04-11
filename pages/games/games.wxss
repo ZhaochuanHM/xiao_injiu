@@ -1,0 +1,78 @@
+/* pages/games/games.wxss */
+.games_block{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30rpx 40rpx 0rpx 40rpx;
+  box-sizing: border-box;
+}
+.games_img{
+  border-radius: 30rpx 30rpx 0rpx 0rpx;
+  width: 100%;
+}
+.games_introduce{
+  position: relative;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 0rpx 0rpx 30rpx 30rpx;
+  padding: 15rpx 20rpx;
+}
+.games_title{
+  font-size: 35rpx;
+  font-weight: 600;
+  display: block;
+}
+.games_time{
+  color: #6F6F6F;
+  font-size: 25rpx;
+  display: block;
+  margin-top: 20rpx;
+}
+.games_number{
+  color: #6F6F6F;
+  font-size: 25rpx;
+  display: block;
+  margin-top: 10rpx;
+}
+.games_rule1{
+  color: #6F6F6F;
+  font-size: 25rpx;
+  display: inline-block;
+}
+.games_rule2{
+  color: #EA0F0F;
+  font-size: 25rpx;
+  display: inline-block;
+}
+.shadow{
+  border-radius: 30rpx 30rpx 30rpx 30rpx;
+  box-shadow: 0 0 20px rgba(0,11,50,0.4);
+  border: 0.5px solid #E5E5E5;
+}
+.games_btn{
+  position: absolute;
+  top: 160rpx;
+  right: 40rpx;
+  background-color: #FF1A1A;
+  text-align: center;
+  color: #ffffff;
+  width: 200rpx;
+  border-radius: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+}
+.footer{
+  width: 100%;
+  color: #B3B3B3;
+  font-size: 20rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}
+.footer_img{
+  width: 45rpx;
+  height: 45rpx;
+  vertical-align: bottom;
+  margin-right: 10rpx;
+}

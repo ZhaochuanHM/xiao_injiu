@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的抽奖",
+  "usingComponents": {
+    "load-more": "../../component/load-more/load-more"
+  }
+}

@@ -1,0 +1,54 @@
+<!--pages/nearby/nearby.wxml-->
+<view class='header'>
+  <i-row>
+    <i-col span="6" i-class="col-class" class='box1'>
+      <view class='address'>
+        <image src="{{address_img1}}" class="address_img"/>
+        <text class='address_text'>{{currLocation}}</text>
+      </view>
+    </i-col>
+    <i-col span="12" i-class="col-class" class='box2'>
+      <view class='search'>
+        <image src="{{search_img}}" class="search_img"/>
+        <input class='search_input' placeholder='请输入门店名' bindinput='setKeywords'/>
+      </view>
+    </i-col>
+    <i-col span="6" i-class="col-class" class='box3'>
+      <view class='address'>
+        <text class='address_text' bindtap='searchMerchant'>搜索</text>
+      </view>
+    </i-col>
+</i-row>
+</view>
+<view class='body'>
+
+  <view class='merchant_list' wx:for='{{merchantList}}' bindtap='url_info' data-mid='{{item.merchant_id}}' data-distance='{{item.distance}}'>
+    <view class='list_item1'>
+      <image src="{{item.merchant_logo}}" class="list_img"/>
+    </view>
+    <view class='list_item2'>
+      <text class='list_title'>{{item.merchant_trade_name}}</text>
+      <image class="liveness_img" src="{{liveness_img}}"/>
+      <view class='merchant_info clearfix'>
+        <text class='list_address'>{{item.merchant_address}}</text>
+        <text class='list_distance'>{{item.distance}}米</text>
+      </view>
+      <view class='merchant_btn clearfix'>
+        <view class='btn1' data-tel='{{item.merchant_mobile}}' catchtap='callNumber'>
+          <i-icon type="mobilephone_fill" size="20" color="#ffffff"/>
+          <text class='btn1_text'>联系门店</text>
+        </view>
+        <view class='btn2' data-lng='{{item.longitude}}' data-lat='{{item.latitude}}' data-name='{{item.merchant_trade_name}}' data-address='{{item.merchant_address}}' catchtap='navigation'>
+          <i-icon type="coordinates_fill" size="20" color="#EA0F0F"/>
+          <text class='btn2_text'>导航前往</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<view>
+  <load-more id='loadMoreView' bindloadMoreListener='loadMoreListener' bindclickLoadMore='clickLoadMore'></load-more>
+</view>
+
+

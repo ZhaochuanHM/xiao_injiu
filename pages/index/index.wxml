@@ -1,0 +1,101 @@
+<!-- 轮播组件 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#ffffff">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item.banner_theme}}" 
+      data-url="{{item.banner_url}}"
+      bindtap='pageTo'
+      class="slide-image" mode='widthFix' style='width:100%; overflow:show;'/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 主要功能 -->
+<view class='change_btn'>
+  <i-row>
+    <i-col span="6" i-class="col-class" class='one'>
+    <image src="{{item_img1}}" class="item_img"/>
+    <text class='item_text'>{{item_text1}}</text>
+    </i-col>
+    <i-col span="6" i-class="col-class">
+    <image bindtap="pageTo" data-url="/pages/source/source" src="{{item_img2}}" class="item_img"/>
+    <text class='item_text'>{{item_text2}}</text>
+    </i-col>
+    <i-col span="6" i-class="col-class" bindtap="pageTo" data-url="/pages/exchange/exchange">
+    <image src="{{item_img3}}" class="item_img"/>
+    <text class='item_text'>{{item_text3}}</text>
+    </i-col>
+    <i-col span="6" i-class="col-class" bindtap="pageTo" data-url="/pages/games/games">
+    <image src="{{item_img4}}" class="item_img"/>
+    <text class='item_text'>{{item_text4}}</text>
+    </i-col>
+  </i-row>
+</view>
+
+<view style='background: #fff'>
+  <!-- tab 切换按钮 -->
+  <i-tabs current="{{ current }}" color="#FF6E3D" bindchange="handleChange">
+      <i-tab key="1" title="进行中"></i-tab>
+      <i-tab key="2" title="已结束"></i-tab>
+      <i-tab key="3" title="未开始"></i-tab>
+  </i-tabs>
+
+  <view class='content1' wx:if="{{content1}}">
+   <scroll-view scroll-y='ture' style="height: auto" bindscrolltolower="pull_upload">
+   <!-- 列表数据循环 -->
+    <view class='list' wx:for='{{processing}}' wx:key="index">
+      <image class='list_img' src='{{item.activity_url}}' mode='widthFix' style='width:100%; overflow:show; border-radius: 20rpx;'/>
+      <view class='time_tips'>
+        <i-icon type="time" size="17" color="#ffffff" />
+        <text class='list_time'>{{item.start_time}}~{{item.end_time}}</text>
+      </view>
+      <text class='list_text'>{{item.activity_name}}</text>
+    </view>
+    <!-- 加载更多 -->
+    <i-load-more wx:if="{{load_more1}}"/>
+     <!-- 暂无数据 -->
+      <view class='load_none' wx:if="{{!processing.length>0}}">
+        <text >-- 暂无数据 --</text>
+      </view>
+  </scroll-view>
+  </view>
+
+  <view class='content2' wx:if="{{content2}}">
+    <!-- 列表数据循环 -->
+    <view class='list' wx:for='{{over}}' wx:key="index">
+      <image class='list_img' src='{{item.activity_url}}' mode='widthFix' style='width:100%; overflow:show; border-radius: 20rpx;'/>
+      <view class='time_tips'>
+        <i-icon type="time" size="17" color="#ffffff" />
+        <text class='list_time'>{{item.start_time}}~{{item.end_time}}</text>
+      </view>
+      <text class='list_text'>{{item.activity_name}}</text>
+    </view>
+      <!-- 暂无数据 -->
+       <view class='load_none' wx:if="{{!over.length>0}}">
+        <text >-- 暂无数据 --</text>
+      </view>
+  </view>
+
+  <view class='content3' wx:if="{{content3}}">
+    <!-- 列表数据循环 -->
+    <view class='list' wx:for='{{ready}}' wx:key="index">
+      <image class='list_img' src='{{item.activity_url}}' mode='widthFix' style='width:100%; overflow:show; border-radius: 20rpx;'/>
+      <view class='time_tips'>
+        <i-icon type="time" size="17" color="#ffffff" />
+        <text class='list_time'>{{item.start_time}}~{{item.end_time}}</text>
+      </view>
+      <text class='list_text'>{{item.activity_name}}</text>
+    </view>
+     <!-- 暂无数据 -->
+       <view class='load_none' wx:if="{{!ready.length>0}}">
+        <text >-- 暂无数据 --</text>
+      </view>
+  </view>
+</view>
+
+<!-- 红包 -->
+<!-- <view class='red_packet' catchtap='pageTo' data-url="/pages/my_coin/my_coin">
+  <image class='red_packet_img' src='{{red_packet_img}}' mode='widthFix' style='width:150rpx;height:150rpx; overflow:show;'/>
+</view> -->
+
+
+

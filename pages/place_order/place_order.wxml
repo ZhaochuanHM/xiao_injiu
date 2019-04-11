@@ -1,0 +1,12 @@
+<!--pages/place_order/place_order.wxml-->
+<!-- 下单成功 -->
+<view class='container'>
+  <view class='pic'>
+    <image src='/images/order_success_icon.png'></image>
+    <view>下单成功</view>
+  </view>
+  <view class='btn'>
+    <image src='/images/order_success_icon_Invitation.png'></image>
+    <text>邀请客户完善用酒信息</text>
+  </view>
+</view>

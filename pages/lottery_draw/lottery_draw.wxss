@@ -1,0 +1,281 @@
+/* pages/lottery_draw/lottery_draw.wxss */
+.header_img{
+  width: 100%;
+  height: 50vw;
+  overflow: show;
+}
+.info{
+  text-align: left;
+  padding: 20rpx 15rpx;
+  line-height: 50rpx;
+}
+.info_text1{
+  display: block;
+  font-size: 35rpx;
+  font-weight: 600;
+}
+.info_text2{
+  display: block;
+  font-size: 25rpx;
+  color: #808080;
+}
+.sponsor{
+  padding: 25rpx 25rpx;
+  background-color: #FFF8E5;
+  font-size: 25rpx;
+}
+.sponsor_text1{
+  display: inline-block;
+  float: left;
+}
+.sponsor_text2{
+  display: inline-block;
+  float: right;
+}
+.body{
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 35rpx 50rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+.btn_img{
+  width: 300rpx;
+  height: 300rpx;
+}
+.people_num{
+  font-size: 25rpx;
+  color: #808080;
+}
+.look_all{
+  color: #4429F2;
+}
+.photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.people_photo{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 1px;
+}
+.footer_title{
+  margin-left: 20rpx;
+}
+.line{
+  display: inline-block;
+  background-color: #FF1A1A;
+  width: 8rpx;
+  height: 30rpx;
+  border-radius: 20rpx;
+  vertical-align: middle;
+}
+.footer_title_text{
+  display: inline-block;
+  font-size: 30rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+  font-weight: 600;
+}
+.introduce{
+  font-size: 28rpx;
+  padding-top: 30rpx;
+  padding-left: 50rpx;
+
+}
+.introduce_text{
+  display: block;
+  line-height: 50rpx;
+}
+.share{
+  text-align: center;
+  border: 0.5px solid #FF1A1A;
+  margin: 35rpx 30rpx;
+  height: 80rpx;
+  line-height: 70rpx;
+  border-radius: 40rpx;
+}
+.share_img{
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: middle;
+}
+.share_text{
+  font-size: 30rpx;
+  vertical-align: middle;
+  color: #FF1A1A;
+  margin-left: 20rpx;
+}
+.lottery{
+  width: 100%;
+  padding: 35rpx 35rpx;
+  box-sizing: border-box;
+}
+.lottery_box{
+  /* height: 350rpx; */
+  border:  5px solid #FFF8E5;
+
+}
+.lottery_box_title{
+  display: block;
+  margin-top: 25rpx;
+  margin-left: 25rpx;
+}
+.lottery_box_img{
+  vertical-align: middle;
+  width: 60rpx;
+  height: 60rpx;
+}
+.lottery_box_text{
+  vertical-align: middle;
+  font-weight: 600;
+  margin-left: 20rpx;
+}
+.address_btn{
+  background-color: #FF1A1A;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  margin: 50rpx auto;
+  width: 60%;
+  border-radius: 40rpx;
+  vertical-align: middle;
+}
+.address_btn_img{
+  width: 35rpx;
+  height: 35rpx;
+}
+.address_btn_text{
+  font-size: 28rpx;
+  color: #ffffff;
+  margin-left: 10rpx;
+}
+.address_change{
+  background-color: #F5F5F5;
+  margin: 20rpx 30rpx;
+  border-radius: 20rpx;
+  padding: 15rpx 15rpx;
+}
+.people_info{
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.people_tel{
+  margin-left: 100rpx;
+}
+.address_info{
+  font-size: 25rpx;
+  color: #808080;
+}
+.frist_people_title{
+  display: block;
+  color: #FF1A1A;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.frist_people_list{
+  margin: 20rpx;
+  display: inline-block;
+
+}
+.frist_people_list_img{
+  display: block;
+  margin: auto;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.frist_people_list_text{
+  font-size: 25rpx;
+}
+.more{
+  display: block;
+  color: #4429F2;
+  font-size: 25rpx;
+  margin-bottom: 30rpx;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/* 弹窗 */
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 9000;
+    opacity: 0.7;
+}
+.dlg{
+    width: 100%;
+    height: 1100rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #fff;
+    border-radius: 60rpx 60rpx 0rpx 0rpx;
+    text-align: center; 
+    margin: auto;
+}
+.close{
+  position: absolute;
+  top:20rpx;
+  right: 30rpx;
+}
+.dlg_img{
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 50rpx;
+  margin-bottom: 20rpx;
+}
+.dlg_text{
+  display: block;
+  font-weight: 600;
+}
+.btn_group{
+  display: block;
+  margin-top: 20rpx;
+}
+.btn1{
+  display: inline-block;
+  color: #ffffff;
+  border: 1px solid #FF1A1A;
+  background-color: #FF1A1A;
+  width: 200rpx;
+  font-size: 25rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 30rpx;
+}
+.btn2{
+  display: inline-block;
+  color: #FF1A1A;
+  border: 1px solid #FF1A1A;
+  width: 200rpx;
+  font-size: 25rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 30rpx;
+  margin-left: 30rpx;
+}
+/* box */
+.userbox{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -1,0 +1,32 @@
+/* pages/coin_record/coin_record.wxss */
+.item{
+  display: flex;
+  width: 95vw;
+  box-sizing: border-box;
+  padding:5vw 5vw 5vw 0;
+  margin-left: 5vw;
+  border-bottom: 1px solid #EEEEEE; 
+  justify-content: space-between;
+  align-items: center;
+}
+.left{
+  font-size: 24rpx;
+  color: #808080;
+}
+.left>view{
+  margin: 5rpx 0;
+}
+.left>view:first-child{
+  font-size: 32rpx;
+  font-weight:bold;
+  color: #000;
+}
+.change{
+  text-align: right;
+  font-size: 36rpx;
+  color: #EA0F0F;
+  font-weight: bold;
+}
+.down{
+  color: #000!important;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "进行中的活动",
+  "usingComponents": {
+    "load-more": "../../component/load-more/load-more"
+  }
+}

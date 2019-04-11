@@ -1,0 +1,91 @@
+<!--pages/exchange/exchange.wxml-->
+<view class='container'>
+ <view class='item' wx:for="{{info}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+    <view class='rate'>
+      <icon class='icon'></icon>
+      <text>{{item.need_coin}}酒币存100ml</text>
+    </view>
+    <view class='goods_box'>
+        <image class='product' src="{{item.goods_theme[0]}}"></image>
+        <view class='meng' wx:if="{{item.store_volume != 0}}">
+          <view class='layer' style="height: {{4%5*250}}rpx"></view>
+          <image class='wave' src='/images/wave2@3x.png'></image>
+        </view>
+    </view>
+    <view class='product_name'>{{item.goods_name}}</view>
+    <view class='quantity'>
+      <text>已存入：</text>
+      <text class='num'>{{item.store_volume}}</text>
+      <text>ml</text>
+    </view>
+    <button class='btn convertible' wx:if="{{item.store_volume == item.goods_volume}}"
+     bindtap='pageTo'
+     data-id="{{item.goods_id}}"  data-coin="{{item.need_coin}}">兑换</button>
+    <button class='btn without' wx:elif="{{item.is_could_store == 0}}"
+    bindtap='pageTo'
+     data-id="{{item.goods_id}}" data-coin="{{item.need_coin}}">存入</button>
+    <button class="btn deposit"  wx:else
+    bindtap='pageTo'
+     data-id="{{item.goods_id}}"  data-coin="{{item.need_coin}}">存入</button>
+  </view>
+  <!-- <view class='item' bindtap='pageToOhter'>
+    <view class='rate'>
+      <icon class='icon'></icon>
+      <text>92酒币存100ml</text>
+    </view>
+    <view class='goods_box'>
+     <image class='product' src='https://jsq-show.oss-cn-shenzhen.aliyuncs.com/in-wine/default-prize8.png'></image>
+     <view class='meng'>
+      <view class='layer'></view>
+      <image class='wave' src='/images/wave2@3x.png'></image>
+     </view>
+    </view>
+    <view class='product_name'>五粮春96精品-500ml</view>
+    <view class='quantity'>
+      <text>已存入：</text>
+      <text class='num'>100</text>
+      <text>ml</text>
+    </view>
+    <button class='btn without'>存入</button>
+  </view>
+  <view class='item' bindtap='pageToOhter'>
+    <view class='rate'>
+      <icon class='icon'></icon>
+      <text>92酒币存100ml</text>
+    </view>
+    <view class='goods_box'>
+        <image class='product' src='https://jsq-show.oss-cn-shenzhen.aliyuncs.com/in-wine/default-prize8.png'></image>
+        <view class='meng'>
+          <view class='layer'></view>
+          <image class='wave' src='/images/wave2@3x.png'></image>
+        </view>
+    </view>
+    <view class='product_name'>五粮春96精品-500ml</view>
+    <view class='quantity'>
+      <text>已存入：</text>
+      <text class='num'>100</text>
+      <text>ml</text>
+    </view>
+    <button class='btn deposit'>存入</button>
+  </view>
+  <view class='item' bindtap='pageToOhter'>
+    <view class='rate'>
+      <icon class='icon'></icon>
+      <text>92酒币存100ml</text>
+    </view>
+    <view class='goods_box'>
+        <image class='product' src='https://jsq-show.oss-cn-shenzhen.aliyuncs.com/in-wine/default-prize8.png'></image>
+        <view class='meng'>
+          <view class='layer'></view>
+          <image class='wave' src='/images/wave2@3x.png'></image>
+        </view>
+    </view>
+    <view class='product_name'>五粮春96精品-500ml</view>
+    <view class='quantity'>
+      <text>已存入：</text>
+      <text class='num'>100</text>
+      <text>ml</text>
+    </view>
+    <button class='btn convertible'>兑换</button>
+  </view> -->
+</view>

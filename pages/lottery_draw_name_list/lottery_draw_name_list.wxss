@@ -1,0 +1,45 @@
+/* pages/lottery_draw_name_list/lottery_draw_name_list.wxss */
+.lottery{
+  width: 100%;
+  padding: 35rpx 35rpx;
+  box-sizing: border-box;
+}
+.lottery_box{
+  /* height: 350rpx; */
+  border:  5px solid #FFF8E5;
+
+}
+.frist_people_title{
+  display: block;
+  color: #FF1A1A;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.frist_people_list{
+  margin: 20rpx;
+  display: inline-block;
+
+}
+.frist_people_list_img{
+  display: block;
+  margin: auto;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.frist_people_list_text{
+  font-size: 25rpx;
+}
+.more{
+  display: block;
+  color: #4429F2;
+  font-size: 25rpx;
+  margin-bottom: 30rpx;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}

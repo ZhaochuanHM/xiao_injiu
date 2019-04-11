@@ -1,0 +1,94 @@
+<!--pages/goods_list/goods_list.wxml-->
+<view class='container'>
+  <view class='header'>
+    <view class='one_box shadow'>
+      <image class='icon' src='../../images/order_goodslist_icon_order@3x.png' mode="widthFix"/>
+      <view class='merchant_info'>
+        <view class='merchant_info1'>红旗连锁</view>
+        <view class='merchant_info2'>高新区益州大道中段1999号</view>
+      </view>
+      <view class='more'>详情》</view>
+    </view>
+
+    <view class='cut_off'></view>
+
+    <view class='line_box clearfix'>
+      <view class='line_box_lable'>用酒情况:</view>
+      <view class='line_box_content'><text>五粮醇3D x 10箱</text><text class='small'>(1箱/6瓶)</text></view>
+    </view>
+
+    <view class='line_box clearfix'>
+      <view class='line_box_lable'>赠品信息:</view>
+      <view class='line_box_content'>
+        <view>椰汁500ml  x  24瓶</view>
+        <view>椰汁500ml  x  24瓶</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='body'>
+    <view class='line_box clearfix'>
+      <view class='line_box_lable1'>商品编号</view>
+      <view class='line_box_content'>数量:<text class='num'>3</text></view>
+    </view>
+    <view class='code_list'>
+      <view class='code_li clearfix'>
+        <text class='index'>1</text>
+        <text class='goods_code'>CXHI45641653FF</text>
+        <image class='delete' src='../../images/my/activity_icon_dele.png' mode="widthFix"/>
+      </view>
+      <view class='code_li clearfix'>
+        <text class='index'>2</text>
+        <text class='goods_code'>CXHI45641653FF</text>
+        <image class='delete' src='../../images/my/activity_icon_dele.png' mode="widthFix"/>
+      </view>
+      <view class='code_li clearfix'>
+        <text class='index'>3</text>
+        <text class='goods_code'>CXHI45641653FF</text>
+        <image class='delete' src='../../images/my/activity_icon_dele.png' mode="widthFix"/>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='body'>
+    <view class='line_box clearfix'>
+      <view class='line_box_lable1'>商品编号</view>
+      <view class='line_box_content'>数量:<text class='num'>3</text></view>
+    </view>
+    <view class='code_list'>
+      <view class='code_li clearfix'>
+        <text class='index'>1</text>
+        <text class='goods_code'>CXHI45641653FF</text>
+        <text class='already'>已入库</text>
+        <!-- <text class='wait'>待入库</text> -->
+      </view>
+      <view class='code_li clearfix'>
+        <text class='index'>2</text>
+        <text class='goods_code'>CXHI45641653FF</text>
+        <text class='already'>已入库</text>
+        <!-- <text class='wait'>待入库</text> -->
+      </view>
+      <view class='code_li clearfix'>
+        <text class='index'>3</text>
+        <text class='goods_code'>CXHI45641653FF</text>
+        <!-- <text class='already'>已入库</text> -->
+        <text class='wait'>待入库</text>
+      </view>
+    </view>
+    <view class='line_box clearfix'>
+      <view class='line_box_lable'>赠品信息:</view>
+      <view class='line_box_content'></view>
+      <i-progress percent="100" status="success"></i-progress>
+    </view>
+  </view>
+
+
+
+  <view class='footer'>
+    <view class='submit'>扫码入库</view>
+  </view>
+
+
+
+</view>

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "订单中心",
+  "navigationBarBackgroundColor": "#FED530",
+  "usingComponents": {
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index",
+    "i-icon": "../../dist/icon/index",
+    "load-more": "../../component/load-more/load-more"
+  }
+}

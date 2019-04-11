@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "往期活动",
+  "usingComponents": {
+    "load-more": "../../component/load-more/load-more"
+  }
+}

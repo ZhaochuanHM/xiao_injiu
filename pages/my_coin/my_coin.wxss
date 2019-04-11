@@ -1,0 +1,168 @@
+/* pages/my_coin/my_coin.wxss */
+view{
+  box-sizing: border-box;
+}
+/* 头部 */
+.head{
+  width: 100vw;
+  height: 52vw;
+  position: relative;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.coin_num{
+  width: 60%;
+  height: 90%;
+  position: absolute;
+  left: 20%;
+  top: 5%;
+  z-index: 99;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.coin_num image{
+  width: 260rpx;
+  height: 260rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+}
+.coin_num>view{
+  position: relative;
+  width: 260rpx;
+  height: 260rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.num{
+  color: #EA0F0F;
+  font-size: 60rpx;
+  font-weight: bold;
+}
+button{
+  font-size: 24rpx;
+}
+.detail_btn{
+  width: 170rpx;
+  height: 60rpx;
+  background: rgba(255,255,255,0);
+  color: #FFD630;
+  border-radius: 30rpx;
+  border: 1px solid #FFD630;
+}
+/* 列表 */
+.item{
+  width: 100vw;
+  padding: 5vw;
+  border-bottom: 1px solid #EEEEEE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list_icon{
+  width: 82rpx;
+  height: 76rpx;
+}
+.instructions{
+  width: 56%;
+  font-size: 20rpx;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+}
+.instructions>view{
+  margin: 5rpx 0;
+}
+.list_title{
+  color: #000;
+  font-size: 26rpx;
+  font-weight: bold;
+  display: flex;
+}
+.list_title>image{
+  width: 30rpx;
+  height: 20rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+.btn{
+  width: 120rpx;
+  height: 60rpx;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  color: #FF1A1A;
+  border: 1px solid #FF1A1A;
+  border-radius: 30rpx;
+  text-align: center;
+}
+.ready{
+  background: #FF1A1A!important;
+  color: #fff!important;
+}
+.already{
+  border: 1px solid #E6E6E6!important;
+  background: #E6E6E6!important;
+  color: #808080!important;
+}
+/* 签到弹窗 */
+.popup{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 100;
+}
+.box{
+  width: 80vw;
+  height: 102vw;
+  position: absolute;
+  margin: auto;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  color: #808080;
+  font-size: 24rpx;
+}
+.box>image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.success{
+  color: #FF1A1A;
+  font-size: 48rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.success_btn{
+  width: 60%;
+  height: 90rpx;
+  background: #FF1A1A;
+  border-radius: 45rpx;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 90rpx;
+  margin: 40rpx 0;
+}

@@ -1,0 +1,16 @@
+<!--pages/dealers_uninitiated_activity/dealers_uninitiated_activity.wxml-->
+<!-- 未开始活动 -->
+<import src="/pages/dealers_template/dealers_template.wxml"/>
+<view class='container'>
+  <template is="activity" data="{{...datas}}"></template>
+  <view>
+    <load-more id='loadMoreView' bindloadMoreListener='loadMoreListener' bindclickLoadMore='clickLoadMore'></load-more>
+  </view>
+</view>
+<!-- 弹窗 -->
+<view class='pop' wx:if="{{pop}}" catchtap='changePop' data-index='-1'>
+  <view class='pop_box' catchtap='nothing'>
+    <view class='pop_title'>活动未通过</view>
+    <view class='message'>{{message}}</view>
+  </view>
+</view>

@@ -1,0 +1,78 @@
+<!--pages/dealers_create_activity/dealers_create_activity.wxml-->
+<import src='/pages/dealers_create_template/dealers_create_template.wxml' />
+<view class='container'>
+  <view class='head'>
+    <view class='flex'>
+      <view>活动类型</view>
+      <view>抽奖</view>
+    </view>
+    <view class='flex'>
+      <view>活动名称</view>
+      <input placeholder='活动名称' value='{{activity_name}}' bindinput='getActivity_name'></input>
+    </view>
+  </view>
+  <view class='goods_info'>
+    <view class='item' wx:for="{{itemNum}}" wx:for-index="idx" wx:for-item="item" wx:key='@index'>
+      <template is='create_item' data="{{item,idx}}"></template>
+    </view>
+    <view class='add_goods' catchtap='addGoods'>添加奖品+</view>
+  </view>
+  <view class='activity_set'>
+    <view class='flex'>
+      <view>开奖条件</view>
+      <i-button type="ghost" bindtap="handleOpen" style='width:80%;'>{{open_type ? open_type : '选择开奖方式'}}</i-button>
+      <i-action-sheet visible="{{ visible }}" show-cancel actions="{{ actions }}"  bind:cancel="handleCancel"  bind:click="handleClickItem" />
+    </view>
+    <view wx:if="{{open_type == '按人数开奖'}}">
+      <view class='flex'>
+        <view>人数</view>
+        <input type='number' value='{{people_num}}' bindinput='getPeople_num'></input>
+        <view style="margin-left: auto;">人</view>
+      </view>
+      <view class='flex'>
+        <view>开始时间</view>
+        <picker mode="date" value="{{date_start}}" start="2000-01-01" end="2050-01-01" bindchange="bindDateChange1">
+          <view class="picker">{{date_start}}</view>
+        </picker>
+      </view>
+      <view class='flex'>
+        <view>结束时间</view>
+        <picker mode="date" value="{{date_end}}" start="2000-01-01" end="2050-01-01" bindchange="bindDateChange2">
+          <view class="picker">{{date_end}}</view>
+        </picker>
+      </view>
+    </view>
+    <view wx:if="{{open_type == '按时间开奖'}}">
+    <view class='flex'>
+        <view>开奖时间</view>
+        <picker mode="date" value="{{date_open}}" start="2000-01-01" end="2050-01-01" bindchange="bindDateChange3" style='width:40%;'>
+          <view class="picker">{{date_open}}</view>
+        </picker>
+        <picker mode="time" value="{{date_time}}" start="00:00" end="24:00" bindchange="bindDateChange4" style='width:40%;'>
+          <view class="picker">{{date_time}}</view>
+        </picker>
+      </view>
+      <view class='flex'>
+        <view>开始时间</view>
+        <picker mode="date" value="{{date_start}}" start="2000-01-01" end="2050-01-01" bindchange="bindDateChange1" style='width:80%;'>
+          <view class="picker">{{date_start}}</view>
+        </picker>
+      </view>
+      <view class='flex'>
+        <view>结束时间</view>
+        <picker mode="date" value="{{date_end}}" start="2000-01-01" end="2050-01-01" bindchange="bindDateChange2" style='width:80%;'>
+          <view class="picker">{{date_end}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class='activity_introduce'>
+    <view class='flex'>
+      <view class='flex_start'>抽奖说明</view>
+      <textarea wx:if="{{!visible}}" placeholder="填写此次抽奖的说明（非必填)" bindinput='textInput'
+       value="{{textVal}}"></textarea>
+      <view wx:if="{{visible}}">{{textVal}}</view>
+    </view>
+  </view>
+  <button class='btn' bindtap='dialog'>{{waId ? '编辑活动' : '发起活动'}}</button>
+</view>

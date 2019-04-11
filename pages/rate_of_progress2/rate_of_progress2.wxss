@@ -1,0 +1,72 @@
+/* pages/rate_of_progress2/rate_of_progress2.wxss */
+page{
+  background: -webkit-linear-gradient(top, #FEDC71 0%,#FFC23B 100%);
+}
+.header{
+  position: relative;
+}
+.header_img{
+  width: 100%;
+}
+.all{
+  display: block;
+  text-align: center;
+  font-size: 30rpx;
+  color: #ffffff;
+  position: absolute;
+  top: 50rpx;
+  right: 0;
+  left: 0;
+  padding: 20rpx 70rpx;
+}
+.all_text{
+  display: inline-block;
+  margin-bottom: 10rpx;
+}
+.count{
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 230rpx;
+  right: 0;
+  left: 0;
+}
+.count_text{
+  display: block;
+  font-size: 25rpx;
+  margin-bottom: 10rpx;
+}
+.count_val{
+  display: block;
+}
+.area_list_box{
+  background-color: #ffffff;
+  width: 92%;
+  margin: auto;
+  border-radius: 30rpx;
+  padding: 30rpx 40rpx;
+  box-sizing: border-box;
+}
+.area_list{
+  margin: 15rpx 0rpx;
+}
+.line1_text{
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #FD8896;
+  display: inline-block
+}
+.line1_count{
+  display: inline-block;
+
+}
+.line1_count_text{
+  font-size: 25rpx;
+  margin-left: 10rpx;
+  color: #7E86A3;
+}
+.line1_count_num{
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #FD8896;
+}

@@ -1,0 +1,40 @@
+/* pages/my_change_phone2/my_change_phone2.wxss */
+.content{
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0 10vw;
+  text-align: center;
+}
+.item{
+  padding: 5vw 0;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E6E6E6;
+}
+.item>image{
+  width: 36rpx;
+  height: 36rpx;
+}
+.item>input{
+  outline: none;
+  border:none;
+  text-align: left;
+  width: 35vw;
+  margin: 0 20rpx; 
+}
+.color_red{
+  color: #FF1A1A;
+  font-size: 35rpx;
+}
+.btn{
+  text-align: center;
+  width: 70vw;
+  height: 90rpx;
+  background: #FF1A1A;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 90rpx;
+  border-radius: 45rpx;
+  margin: 10vw auto!important;
+}

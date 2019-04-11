@@ -1,0 +1,4 @@
+<canvas  canvas-id="shareImg" style="width:{{width}}px;height:{{height/1.2}}px"></canvas>
+<view class='btn' bindtap='save_img'>保存图片分享朋友圈</view>
+
+

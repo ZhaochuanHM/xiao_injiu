@@ -1,0 +1,23 @@
+<!--pages/my_meskill/my_meskill.wxml-->
+<!-- 我的秒杀 -->
+<view class='container'>
+  <i-notice-bar icon="systemprompt" loop>当您收到奖品后，请将核奖码告知客服！</i-notice-bar>
+  <view>
+    <view class='item' wx:for="{{my_meskill}}" data-id='{{item.prize_id}}' bindtap='myseckill' data-index='{{index}}'>
+      <image src='{{item.img}}'></image>
+      <view class='right'>
+        <view class='detail'>
+          <view class='goods_name'>{{item.goods_name}}</view>
+          <view class='red'>{{item.goods_price}}</view>
+          <view>{{item.time}}</view>
+        </view>
+        <view class='code'>{{item.checkcode}}</view>
+      </view>
+    </view>
+
+    <view>
+      <load-more id='loadMoreView' bindloadMoreListener='loadMoreListener' bindclickLoadMore='clickLoadMore'></load-more>
+    </view>
+
+  </view>
+</view>

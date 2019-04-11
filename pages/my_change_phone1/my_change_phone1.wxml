@@ -1,0 +1,17 @@
+<!--pages/my_change_phone1/my_change_phone1.wxml-->
+<view class='container'>
+  <view class='content'>
+    <view class='color_gray'>为了账户安全，需要对当前手机号码进行验证</view>
+    <view class='old_phone'>
+      <text>当前绑定手机号码：</text>
+      <text>{{tel}}</text>
+    </view>
+    <view class='validation'>
+      <image src='/images/my/login_icon_code_pre.png'></image>
+      <input placeholder='请输入验证码' maxlength='4' value='{{checkcode}}' bindinput='changecheckcode'></input>
+      <!-- <view class='color_red' bindtap='countDown'>{{countDownNum}}</view> -->
+      <button type="warn"  disabled="{{disabled}}" bindtap="countDown" size="mini">{{countDownNum}}</button>
+    </view>
+    <view class='btn' bindtap='submit'>下一步</view>
+  </view>
+</view>

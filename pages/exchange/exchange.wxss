@@ -1,0 +1,100 @@
+/* pages/exchange/exchange.wxss */
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 1px solid #E6E6E6;
+}
+.item{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+.rate{
+  color: #4429F2;
+  font-size: 20rpx;
+}
+.icon{
+  width: 18rpx;
+  height: 16rpx;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAgCAYAAAB6kdqOAAABq0lEQVRYR2NkwAKc1D6aMfxj3MHAyCiITZ4KYq+YGBgc9tzmvY5uFiO6gLX6a172f+wXGBgYlahgMU4jgBZfEGLlMV99jfEXsiIMBzmpfpoPdEwCLR0DM5uR4X/33tt8ZTgd5KzyOeQ/I8NqejgGbMd/YML4z+Cy9y7vfoQjoSxbza+SrH/+XgGGjhDdHAR2E8Pj3z//6h95JPAeZC80yv4zOql+2QHku9HTMTC7/v9nWLn/Dm8E3EHOql/y/zP8nzAQjoFH1X/GmL13eJYyOih/1mFiYjgNlOAYSAcx/P//geHvXwNGZ9XP54HxaDCgjkFYvguYdj6DCieNQeGg//+PAR306TMwbX/bd5tXfKAc5anyn/0n45cPwJh6DQohIM3AAHQQRiFJLwe6KL3j/8fM+gFYCHwcdRC2UB8NIUJpcTSERkOIUAgQkqcoDTmqfjrMyMBoQ8gSaFPiwt7bvIaE1FLkIGBVsxVY1XgRsgQqfxhYA9gRUkuRgwgZTo78qIMIhdpoCA2PECLkC/rIgxton04ByxVT+liI35b////vGLBmKy6nDToHAQA4aQc8rz76DgAAAABJRU5ErkJggg==') no-repeat;
+  background-size: cover;
+  margin-right: 7rpx;
+  position: relative;
+  top: 2rpx;
+}
+.goods_box{
+  width: 250rpx;
+  height: 250rpx;
+  margin: 25rpx 0;
+  position: relative;
+}
+.product{
+  width: 250rpx;
+  height: 250rpx;
+}
+.product_name{
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.quantity{
+  font-size: 20rpx;
+}
+.btn{
+  margin-top:20rpx; 
+  width: 140rpx;
+  height: 60rpx;
+  border-radius: 30px;
+  font-size: 24rpx;
+}
+.num{
+  color: #EA0F0F;
+  margin: 0 10rpx;
+}
+/*存入  */
+.deposit{
+  background: #FF1A1A;
+  color: #fff;
+  border: 1px solid #FF1A1A;
+}
+/*没有  */
+.without{
+  background: #F5F5F5;
+  color: #B3B3B3;
+  border: 1px solid #F5F5F5;
+}
+.without::after{
+  border: none!important;
+}
+/*可兑换  */
+.convertible{
+  background: #FFD630;
+  border: 1px solid #EA0F0F;
+  color: #EA0F0F;
+}
+/* 波浪 */
+.meng{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+}
+.layer{
+  width: 100%;
+  height: calc(100% - 20rpx);
+  background: rgba(0,0,0,0.5);
+}
+.wave{
+  width: 100%;
+  height: 20rpx;
+}

@@ -1,0 +1,97 @@
+/* pages/dealers_create_bargaining/dealers_create_bargaining.wxss */
+view{
+  box-sizing: border-box;
+}
+.container{
+  background: #F5F5F5;
+  border-top: 1px solid #F5F5F5;
+  padding-bottom: 40rpx;
+}
+.head{
+  margin: 20rpx 0;
+  background: #fff;
+}
+.head>view>view{
+  color: #000;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  width: 95vw;
+  margin-left: 5vw;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #F5F5F5;
+  font-size: 26rpx;
+  padding-right: 5vw;
+  color:#B3B3B3;
+}
+.flex>view:first-child{
+  font-weight: bold;
+  margin-right: 40rpx;
+  color: #000;
+  width: 18%;
+  }
+textarea{
+  max-width: 70%;
+  position: relative;
+}
+.flex_start{
+  align-self: flex-start;
+}
+.activity_set,.activity_introduce{
+  background: #fff;
+  margin: 20rpx 0;
+}
+.btn{
+  width: 90vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 45rpx;
+  background: #FF1A1A;
+  margin: 40rpx auto;
+}
+.add_goods{
+  text-align: center;
+  background: #F5F5F5;
+  margin-bottom: 40rpx;
+  font-size: 26rpx;
+  color: #4429F2;
+}
+.item{
+  margin-bottom: 40rpx;
+}
+/* 奖品图片样式 */
+.goods_info{
+  background: #fff;
+}
+.price_set{
+  background: #fff;
+  margin: 20rpx 0;
+}
+.tem_bg{
+  width: 100vw;
+  height: 48vw;
+  position: relative;
+}
+.tem_bg>image{
+  width: 100%;
+  height: 100%;
+}
+.tem_btn{
+  color: #808080;
+  font-size: 24rpx;
+  background: #fff;
+  border:1px solid #B3B3B3;
+  border-radius: 10rpx;
+  position: absolute;
+  top: 40rpx;
+  right: 30rpx;
+  padding: 20rpx 30rpx;
+}
+.coin{
+  width: 100rpx;
+  color: #000000;
+  margin-left: auto;
+}

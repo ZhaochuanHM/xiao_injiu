@@ -1,0 +1,55 @@
+/* pages/my_change_phone1/my_change_phone1.wxss */
+.content{
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0 5vw;
+  text-align: center;
+}
+.content>view{
+  margin: 20rpx 0;
+}
+.color_gray{
+  color: #808080;
+  font-size: 26rpx;
+}
+.old_phone{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.old_phone>text:first-child{
+  color: #000;
+}
+.old_phone>text:last-child{
+  color: #4429F2;
+}
+.validation{
+  padding: 5vw;
+  font-size: 26rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E6E6E6;
+}
+.validation>image{
+  width: 36rpx;
+  height: 36rpx;
+}
+.validation>input{
+  outline: none;
+  border:none;
+  text-align: left;
+}
+.color_red{
+  color: #FF1A1A;
+  font-size: 35rpx;
+}
+.btn{
+  width: 70vw;
+  height: 90rpx;
+  background: #FF1A1A;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 90rpx;
+  border-radius: 45rpx;
+  margin: 10vw auto!important;
+}

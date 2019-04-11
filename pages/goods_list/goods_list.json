@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "货品清单",
+  "navigationBarBackgroundColor": "#FED530",
+  "usingComponents": {
+    "i-progress": "../../dist/progress/index"
+  }
+}

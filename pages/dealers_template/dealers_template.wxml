@@ -1,0 +1,32 @@
+<!--pages/dealers_template/dealers_template.wxml-->
+<template name='activity'>
+  <view class='item' wx:for-items="{{arr}}" wx:for-item="value" wx:key="index" data-watype='{{value.wa_type}}' data-waid='{{value.wa_id}}' data-prizeid='{{value.prize_id}}' bindtap='goWaInfo'>
+    <view class='head'>
+      <view>{{value.reward}}</view>
+      <view class='time'>创建时间：{{value.time}}</view>
+      <view class='status'  bindtap="{{value.is_pass == 0 ? '' : value.is_pass == 1 ?'':'changePop'}}" data-index="{{index}}" wx:if='{{value.show_status}}'>
+        <view class="pass_for {{value.is_pass == 0 ? 'audit':value.is_pass == 1 ? 'success' : 'no_pass'}}">
+          {{value.is_pass==0 ? '待审核' :value.is_pass==1 ? '通过审核' : '未通过审核'}}
+        </view>
+        <image wx:if="{{value.is_pass == 2}}" src='/images/my/activity_notyet_icon_refuse.png'></image>
+      </view>
+    </view>
+    <view class="content {{value.ongoing == 0 ? 'mar_b' : 'mar_b'}}">
+      <image src='{{value.good_img}}'></image>
+      <view class='title'>
+        <view class='title_font'>{{value.title}}</view>
+        <view>活动时间：{{value.activity_time}}</view>
+      </view>
+    </view>
+    <view class='operation' wx:if="{{value.ongoing == 1}}">
+      <view bindtap="{{value.wa_type == 1 ? 'free' : value.wa_type == 2 ? 'seckill':'bargainimg'}}" data-index="{{index}}">
+        <image src='/images/my/ads_edit.png'></image>
+        <view>编辑</view>
+      </view>
+      <view data-id='{{value.wa_id}}' bindtap='delete_list' data-index="{{index}}">
+        <image src='/images/my/ads_delete.png'></image>
+        <view>删除</view>
+      </view>
+    </view>
+  </view>
+</template>

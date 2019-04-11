@@ -1,0 +1,263 @@
+/* pages/order_details/order_details.wxss */
+.head{
+  /* height: 250rpx; */
+  width: 100%;
+  background-color: #FED530;
+  padding: 50rpx 50rpx;
+  box-sizing: border-box;
+}
+.step_box{
+  width: 100%;
+  /* height: 150rpx; */
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  vertical-align: middle;
+  text-align: center;
+  padding: 30rpx 0;
+  box-sizing: border-box;
+}
+.step1,.step2,.step3,.step4,.step5{
+  display: inline-block;
+}
+.line1,.line2,.line3,.line4,.line5{
+  display: inline-block;
+}
+.step{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.line{
+  width: 80rpx;
+  height: 20rpx;
+  vertical-align: middle;
+  margin: 0 5rpx;
+}
+
+.text{
+  display: inline-block;
+  color: #808080;
+  font-size: 25rpx;
+  width: 125rpx;
+}
+
+.green{
+  color: #3AC984;
+}
+.body{
+  width: 100%;
+  padding: 25rpx 50rpx 50rpx 50rpx;
+  box-sizing: border-box;
+}
+.line_box{
+  font-size: 30rpx;
+  margin: 15rpx 0;
+}
+.cut_off{
+  display: inline-block;
+  height: 1rpx;
+  width: 100%;
+  background-color: #EEEEEE;
+  margin: 10rpx 0;
+}
+.line_box_lable{
+  display: inline-block;
+  float: left;
+  color: #808080;
+}
+.line_box_content{
+  display: inline-block;
+  float: right;
+  text-align: right;
+  width: 350rpx;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.blue{
+  color: #4429F2;
+}
+.small{
+  color: #808080;
+  font-size: 20rpx;
+}
+.tel{
+  color: #808080;
+}
+.address1{
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 25rpx;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+}
+.merchant_name{
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.hr0{
+  height:1px;
+  border:none;
+  border-top:1px dashed #B3B3B3;
+  margin: 15rpx 0;
+}
+.user{
+  font-weight: 600;
+}
+.user_name{
+  font-size: 25rpx;
+}
+.user_tel{
+  font-size: 25rpx;
+  margin-left: 200rpx;
+}
+.user_address{
+  font-size: 25rpx;
+  color: #808080;
+}
+
+.footer{
+  width: 100%;
+  padding: 50rpx 0;
+}
+.btn_box{
+  text-align: center;
+}
+.btn{
+  display: inline-block;
+  font-size: 30rpx;
+  width: 200rpx;
+  text-align: center;
+}
+.error{
+  border: 1px solid #B3B3B3;
+  padding: 10rpx;
+  color: #808080;
+  border-radius: 35rpx;
+  margin-right: 20rpx;
+}
+.success{
+  border: 1px solid #3AC984;
+  background-color: #3AC984;
+  padding: 10rpx;
+  color: #ffffff;
+  border-radius: 35rpx;
+  margin-left: 20rpx;
+}
+
+.btn_box1{
+  text-align: center;
+}
+
+.list{
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30rpx
+}
+
+.list_icon{
+  width: 50rpx;
+  height: 50rpx;
+}
+.list_text{
+  font-size: 25rpx;
+  color: #FF6E3D;
+}
+.submit{
+  font-size: 30rpx;
+  width: 350rpx;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #4429F2;
+  background-color: #4429F2;
+  padding: 10rpx;
+  color: #ffffff;
+  border-radius: 35rpx;
+  margin-left: 30rpx;
+}
+
+.code{
+  font-size: 30rpx;
+  width: 350rpx;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #FF6E3D;
+  background-color: #FF6E3D;
+  padding: 10rpx;
+  color: #ffffff;
+  border-radius: 35rpx;
+  margin-left: 30rpx;
+}
+
+.end{
+  font-size: 30rpx;
+  width: 350rpx;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #E6E6E6;
+  background-color: #E6E6E6;
+  padding: 10rpx;
+  color: #B3B3B3;
+  border-radius: 35rpx;
+  margin-left: 30rpx;
+}
+textarea{
+  width: 100%;
+  text-align: center;
+}
+
+.check_code_box{
+  text-align: center;
+  border-radius: 60rpx;
+  width: 100%;
+  background-color: #F4F2FF;
+  padding: 20rpx 20rpx;
+  color: #4429F2;
+  box-sizing: border-box;
+  border: 1px dotted #4429F2;
+}
+.check_code_box_text1{
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.check_code_box_text2{
+  font-size: 20rpx;
+}
+.merchant_box{
+  text-align: left;
+  padding-left: 50rpx;
+}
+.merchant_box_img{
+  height: 80rpx;
+  width: 80rpx;
+  vertical-align: middle;
+}
+.merchant_box_info{
+  margin-left: 10rpx;
+  display: inline-block;
+  vertical-align: middle;
+  width: 370rpx;
+}
+.merchant_box_info_one{
+  font-size: 25rpx;
+  font-weight: 600;
+
+}
+.merchant_box_info_two{
+  color: #808080;
+  font-size: 20rpx;
+}
+.merchant_box_tel{
+  height: 50rpx;
+  width: 50rpx;
+  vertical-align: middle;
+  margin-left: 45rpx;
+}

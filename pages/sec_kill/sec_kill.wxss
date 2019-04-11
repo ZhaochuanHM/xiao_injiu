@@ -1,0 +1,198 @@
+/* pages/sec_kill/sec_kill.wxss */
+.seckill_header_img{
+  width: 100%;
+}
+.seckill_info{
+  padding: 5rpx 25rpx;
+}
+.seckill_info_title{
+  font-size: 35rpx;
+  font-weight: 600;
+}
+.seckill_info_price{
+  display: block;
+}
+.seckill_info_price1{
+  font-size: 30rpx;
+  color: #EA0F0F;
+  font-weight: 600;
+}
+.seckill_info_price2{
+  margin-left: 30rpx;
+  font-size: 25rpx;
+  color: #999999;
+  text-decoration:line-through;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.footer{
+  margin-top: 30rpx;
+}
+.footer_title{
+  margin-left: 20rpx;
+}
+.line{
+  display: inline-block;
+  background-color: #FF1A1A;
+  width: 8rpx;
+  height: 30rpx;
+  border-radius: 20rpx;
+  vertical-align: middle;
+}
+.footer_title_text{
+  display: inline-block;
+  font-size: 30rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+  font-weight: 600;
+}
+.introduce{
+  font-size: 28rpx;
+  padding-top: 30rpx;
+  padding-left: 50rpx;
+
+}
+.introduce_text{
+  display: block;
+  line-height: 50rpx;
+}
+.rule_text{
+  display: block;
+  line-height: 50rpx;
+}
+.rush_to_buy{
+  text-align: center;
+  border: 0.5px solid #FF1A1A;
+  background-color: #FF1A1A;
+  margin: 35rpx 30rpx;
+  height: 80rpx;
+  line-height: 70rpx;
+  border-radius: 40rpx;
+}
+.rush_to_buy_text{
+  text-align: center;
+  border: 0.5px solid #FF1A1A;
+  background-color: #FF1A1A;
+  margin: 35rpx 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  color: #ffffff;
+  margin-left: 20rpx;
+  font-size: 35rpx;
+}
+.rush_to_buy_text1{
+  text-align: center;
+  border: 0.5px solid #808080;
+  background-color: #808080;
+  margin: 35rpx 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  color: #ffffff;
+  margin-left: 20rpx;
+  font-size: 35rpx;
+}
+.rush_to_buy_box{
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+.rush_to_buy_btn1{
+  display: inline-block;
+  border: 0.5px solid #3AC984;
+  background-color: #3AC984;
+  width: 400rpx;
+  padding: 10rpx 0rpx;
+  color: #ffffff;
+  border-radius: 40rpx;
+  margin-right: 10rpx;
+  font-size: 35rpx;
+}
+.rush_to_buy_btn2{
+  display: inline-block;
+  border: 0.5px solid #FF6E3D;
+  width: 250rpx;
+  padding: 10rpx 0rpx;
+  color: #FF6E3D;
+  border-radius: 40rpx;
+  margin-left: 10rpx;
+  font-size: 35rpx;
+}
+.share_img{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+.address_box{
+  text-align: center;
+  padding: 30rpx 0rpx;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.success_tips{
+  font-size: 35rpx;
+  font-weight: 600;
+  color: #3AC984;
+}
+.address_change{
+  background-color: #F5F5F5;
+  margin: 20rpx 30rpx;
+  border-radius: 20rpx;
+  padding: 15rpx 15rpx;
+}
+.people_info{
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.people_tel{
+  margin-left: 100rpx;
+}
+.address_info{
+  font-size: 25rpx;
+  color: #808080;
+}
+.address_btn{
+  background-color: #FF1A1A;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  margin: 50rpx auto;
+  width: 60%;
+  border-radius: 40rpx;
+  vertical-align: middle;
+}
+.address_btn_img{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+.address_btn_text{
+  font-size: 28rpx;
+  color: #ffffff;
+  margin-left: 10rpx;
+  vertical-align: middle;
+}
+.shadow{
+  box-shadow: 0 0 20px rgba(0,11,50,0.4);
+  border: 0.5px solid #E5E5E5;
+}
+/* 返回首页 */
+.backBtn{
+  width: 50vw;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 45rpx;
+  font-size: 32rpx;
+  background: #FF1A1A;
+  margin: 20rpx auto;
+}

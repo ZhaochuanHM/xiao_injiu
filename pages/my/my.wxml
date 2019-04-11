@@ -1,0 +1,113 @@
+<!--pages/my/my.wxml-->
+<!-- 我的 -->
+<view class='container'>
+  <view class='head'>
+    <view class='user'>
+      <view class='head_img'>
+        <image src="{{userInfo.avatarUrl}}"></image>
+        <view class='nick_name'>{{userInfo.nickName}}</view>
+      </view>
+      <!-- <image bindtap='pageTo' data-url="/pages/my_message/my_message" class="notice {{'infor'}}" src='/images/my/my_icon_msg@3x.png'></image> -->
+    </view>
+    <view class='activity'>
+      <view class='activity_item' bindtap='pageTo' data-url="/pages/my_lucky/my_lucky">
+        <view class='num'>{{my_lottery}}</view>
+        <view>我的抽奖</view>
+      </view>
+      <view class='activity_item'  bindtap='pageTo' data-url="/pages/my_snap_up/my_snap_up">
+        <view class='num'>{{my_bargaining}}</view>
+        <view>我的抢购</view>
+      </view>
+      <view class='activity_item'  bindtap='pageTo' data-url="/pages/my_meskill/my_meskill">
+        <view class='num'>{{my_seckill}}</view>
+        <view>我的秒杀</view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class='mine'>
+    <view class='li' bindtap='pageTo' data-url="/pages/my_coin/my_coin">
+      <view class='left_icon'>
+        <image src='/images/my/my_icon_coin@3x.png'></image>
+        <text class='title '>我的酒币</text>
+      </view>
+      <view class='right_icon ready'>签到</view>
+    </view>
+    <view class='li' bindtap='pageTo' data-url="/pages/my_exchange/my_exchange">
+      <view class='left_icon'>
+        <image src='/images/my/my_icon_change@3x.png'></image>
+        <text class="title {{'on'}}">我的兑换</text>
+      </view>
+      <view class='right_icon'></view>
+    </view>
+  </view> -->
+  <!-- <view class='tool'>
+    <view class='li' bindtap='address'>
+      <view class='left_icon'>
+        <image src='/images/my/my_icon_address@3x.png'></image>
+        <text class="title">收货地址</text>
+      </view>
+      <view class='right_icon'></view>
+    </view>
+    <view class='li' bindtap='pageTo' data-url="/pages/dealer_tools/dealer_tools" wx:if='{{is_agency}}'>
+      <view class='left_icon '>
+        <image src='/images/my/my_icon_distributor@3x.png'></image>
+        <text class="title">经销商工具</text>
+      </view>
+      <view class='right_icon color_b'>查看</view>
+    </view>
+    <view class='li' bindtap='pageTo' data-url="/pages/my_set/my_set">
+      <view class='left_icon'>
+        <image src='/images/my/my_icon_set@3x.png'></image>
+        <text class="title">设置</text>
+      </view>
+      <view class='right_icon'></view>
+    </view>
+    <view class='li'>
+      <view class='left_icon'>
+        <image src='/images/my/my_icon_about@3x.png' bindtap='pageTo' data-url="/pages/share/share"></image>
+        <text class="title">关于我们</text>
+      </view>
+      <view class='right_icon'></view>
+    </view>
+  </view> -->
+
+
+    <view class='activity1'>
+      <view class='activity_item1' bindtap='pageTo' data-url="">
+        <image class='icon' src='/images/my_icon_gifts@3x.png'></image>
+        <view>我的奖品</view>
+      </view>
+      <view class='activity_item1'  bindtap='pageTo' data-url="">
+        <image class='icon' src='/images/my_icon_order@3x.png'></image>
+        <view>我的订单</view>
+      </view>
+      <view class='activity_item1'  bindtap='pageTo' data-url="/pages/dealer_tools/dealer_tools">
+        <image class='icon' src='/images/my_icon_distributor@3x.png'></image>
+        <view>经销商工具</view>
+      </view>
+    </view>
+    <view class='activity2'>
+      <view class='activity_item1' bindtap='address'>
+        <image class='icon' src='/images/my_icon_address@3x.png'></image>
+        <view>我的地址</view>
+      </view>
+      <view class='activity_item1'  bindtap='pageTo' data-url="/pages/my_set/my_set">
+        <image class='icon' src='/images/my_icon_set@3x.png'></image>
+        <view>系统设置</view>
+      </view>
+      <view class='activity_item1'  bindtap='pageTo' data-url="">
+        <image class='icon' src='/images/my_icon_about@3x.png'></image>
+        <view>关于我们</view>
+      </view>
+    </view>
+
+
+
+    
+
+
+  
+  <navigator class='login-out' open-type="exit" target="miniProgram" bindtap='login_out'>退出登录</navigator>
+
+
+</view>

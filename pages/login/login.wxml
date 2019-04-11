@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class='content'>
+  <view class='login_box'>
+    <image src='{{loginIcon}}' class='login_icon' />
+    <text class='about'>{{aboutText}}</text>
+  </view>
+  <view class='tips_box'>
+  <text class='tips1'>{{tipsText1}}</text>
+  <text class='tips2'>{{tipsText2}}</text>
+  </view>
+  <button class='lgoin' 
+    open-type='getUserInfo' bindgetuserinfo="onGotUserInfo"
+   >授权登录</button>
+</view>

@@ -1,0 +1,50 @@
+/* pages/my_snap_up/my_snap_up.wxss */
+view{
+  box-sizing: border-box;
+}
+.container{
+  background: #F2F2F2;
+  width: 100vw;
+  min-height: 100vh;
+}
+.item{
+  width: 100vw;
+  padding: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.item>image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 1px solid #E6E6E6;
+}
+.item>.right{
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail{
+  font-size: 20rpx;
+  color: #808080;
+}
+.detail>view{
+  margin: 8rpx 0;
+}
+.goods_name{
+  color: #000;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.red{
+  color: #EA0F0F;
+}
+.code{
+  color: #4429F2;
+  font-size: 24rpx;
+  font-weight: bold;
+}

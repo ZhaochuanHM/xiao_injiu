@@ -1,0 +1,85 @@
+<!--pages/exchange_detail/exchange_detail.wxml-->
+<view>
+  <!-- 轮播组件 -->
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000" indicator-active-color="#ffffff">
+    <block wx:for="{{data.goods_theme}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode='widthFix' style='width:100%; overflow:show;' />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='content'>
+    <view class='content_l'>
+      <text>{{data.goods_name}}</text>
+      <view class='quantity'>
+        <text>已存入：</text>
+        <text class='num'>{{data.store_volume}}</text>
+        <text>ml</text>
+        <button class='history' bindtap='showPop' data-id="{{data.goods_id}}">存酒记录</button>
+      </view>
+    </view>
+    <view class='content_r'>
+      <view class='rate'>
+        <icon class='icon'></icon>
+        <text>{{need_coin}}酒币存100ml</text>
+      </view>
+    </view>
+  </view>
+  <view class='product_infor'>
+    <view class='title '>
+      <icon></icon>
+      <text>产品信息</text>
+    </view>
+    <view class='information'>
+      <text>{{goods_brief}}</text>
+    </view>
+  </view>
+  <button class='changeBtn uenough' wx:if="{{store_stute == 0}}">酒币不足，赚酒币</button>
+  <button class='changeBtn deposit'wx:if="{{store_stute == 1}}" bindtap='store'>存入</button>
+  <button class='changeBtn convertible' bindtap='convertible'wx:if="{{store_stute == 2}}">立即兑换</button>
+</view>
+
+<!--记录弹窗  -->
+<view class="pop {{isShow ? 'show_pop' : ''}}" bindtap='showPop'>
+  <scroll-view scroll-top="{{scrollTop}}" 
+  scroll-y="true"  
+  class="pop_content" 
+  bindscrolltolower="bindDownLoad" 
+  catchtap='nothing'>
+    <!-- 
+    bindscrolltoupper="topLoad"  
+    bindscroll="scroll" -->
+    <view class='list' wx:for="{{logs}}" wx:key="index">
+      <view class='time_box'>
+        <text>{{item.create_time}}</text>
+        <text>-{{item.wine_coin_num}}酒币</text>
+      </view>
+      <view>+{{item.exchange_volume}}ml</view>
+    </view>
+    <!-- <load-more id="loadMore"></load-more> -->
+    <view class='loading' wx:if="{{show}}">加载中...</view>
+    <view class='none' wx:if="{{none}}">没有更多数据</view>
+  </scroll-view>
+</view>
+<!--存酒弹窗  -->
+<view class='save_pop' hidden="{{!is_store}}">
+  <view class='save_box'>
+    <view class='save_title'>
+      <text>{{data.goods_name}}</text>
+      <view class='save_rate'>
+        <icon></icon>
+        <text>{{need_coin}}酒币存100ml</text>
+      </view>
+      <view class='cancel_box' bindtap='cancel_store'>
+        <view class='cancel'></view>
+      </view>
+    </view>
+    <view class='save'>
+      <image src="{{!reduce ? reduce_url0 : reduce_url1}}" catchtap="{{!reduce ? '' : 'reduce'}}"></image>
+      <view class='ml '>{{store_volume}}ml</view>
+      <image src="{{!add ? add_url0 : add_url1}}" catchtap="{{!add ? '' : 'add'}}"></image>
+    </view>
+    <button class='coin ' bindtap="storeVolume">{{should_coin}}酒币</button>
+    <text class='my_coin '>我的酒币：{{my_coin}}个</text>
+  </view>
+</view>

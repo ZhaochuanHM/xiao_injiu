@@ -1,0 +1,7 @@
+.btn{
+  margin-top:60rpx; 
+  background-color: #3AC984;
+  color: #ffffff;
+  text-align: center;
+  padding: 20rpx 0;
+}

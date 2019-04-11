@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "中奖名单",
+  "usingComponents": {
+    "i-load-more": "../../dist/load-more/index",
+    "i-icon": "../../dist/icon/index"
+  }
+}

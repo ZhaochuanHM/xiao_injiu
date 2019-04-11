@@ -1,0 +1,197 @@
+/* pages/rush_to_buy_people/rush_to_buy_people.wxss */
+page{
+  background-color: #F5F5F5;
+}
+.header{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  position: relative;
+  padding: 30rpx 0rpx;
+  background-color: #ffffff;
+}
+.goods_iterm1{
+  align-items:stretch;
+}
+.goods_img{
+  width: 180rpx;
+  height: 180rpx;
+  vertical-align: middle;
+  margin: 20rpx;
+  border: 0.5rpx solid #DCDCDC;
+}
+
+.goods_iterm2{
+  align-items:stretch;
+  text-align: left;
+}
+.goods_title{
+  display: block;
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-top:20rpx; 
+}
+.good_state{
+  display: block;
+  width: 500rpx;
+}
+.good_state1{
+  display: inline-block;
+}
+.state1_img{
+  height: 30rpx;
+  width: 30rpx;
+  vertical-align: middle;
+}
+.state1_text{
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  vertical-align: middle;
+  color: #6F6F6F;
+}
+.good_state2{
+  margin-left: 20rpx;
+  display: inline-block;
+}
+.state2_img{
+  height: 30rpx;
+  width: 30rpx;
+  vertical-align: middle;
+}
+.state2_text{
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  vertical-align: middle;
+  color: #6F6F6F;
+}
+.goods_price{
+  display: block;
+}
+.peice1{
+  color: #EA0F0F;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.peice2{
+  margin-left: 10rpx;
+  color: #999999;
+  font-size: 20rpx;
+  text-decoration:line-through;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.sponsor{
+  padding: 25rpx 25rpx;
+  background-color: #FFF8E5;
+  font-size: 25rpx;
+}
+.sponsor_text1{
+  display: inline-block;
+  float: left;
+}
+.sponsor_text2{
+  display: inline-block;
+  float: right;
+}
+.btn_group{
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 30rpx 30rpx;
+  box-sizing: border-box;
+}
+.btn1{
+  display: block;
+  background-color: #FF1A1A;
+  color: #ffffff;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 20rpx 30rpx;
+  border-radius: 20rpx; 
+}
+.btn2{
+  display: block;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 20rpx 30rpx;
+  color: #FF1A1A;
+}
+.people_group{
+  background-color: #ffffff;
+  padding: 30rpx 35rpx;
+  border-bottom: 0.5 solid #E6E6E6;
+  margin-top: 30rpx;
+}
+.people_text{
+  font-size: 30rpx;
+  font-weight: 600;
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 20rpx;
+  margin-bottom: 20rpx;
+}
+.people_list_img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin: 5rpx; 
+}
+.success{
+  font-size: 35rpx;
+  font-weight: 600;
+  color: #3AC984;
+  padding: 30rpx 0 10rpx 0;
+}
+.text{
+  font-size: 26rpx;
+}
+.address_btn{
+  background-color: #FF1A1A;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  margin: 20rpx auto;
+  width: 60%;
+  border-radius: 40rpx;
+  vertical-align: middle;
+}
+.address_btn_img{
+  width: 35rpx;
+  height: 35rpx;
+}
+.address_btn_text{
+  font-size: 28rpx;
+  color: #ffffff;
+  margin-left: 10rpx;
+}
+.address_change{
+  background-color: #F5F5F5;
+  border-radius: 20rpx;
+  padding: 15rpx 15rpx;
+}
+.people_info{
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.people_tel{
+  margin-left: 100rpx;
+}
+.address_info{
+  font-size: 25rpx;
+  color: #808080;
+}
+.backBtn{
+  width: 50vw;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 45rpx;
+  font-size: 32rpx;
+  background: #FF1A1A;
+  margin: 20rpx auto;
+}

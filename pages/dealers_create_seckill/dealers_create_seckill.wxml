@@ -1,0 +1,80 @@
+<!--pages/dealers_create_seckill/dealers_create_seckill.wxml-->
+<!--pages/dealers_create_bargaining/dealers_create_bargaining.wxml-->
+<view class='container'>
+  <view class='head'>
+    <view class='flex'>
+      <view>活动类型</view>
+      <view>秒杀</view>
+    </view>
+    <view class='flex'>
+      <view>活动名称</view>
+      <input placeholder='活动名称' value='{{activity_name}}' bindinput='getActivity_name'></input>
+    </view>
+  </view>
+  <view class='goods_info'>
+    <view class='tem_bg'>
+      <image src='{{activity_img}}' data-index='{{idx}}'></image>
+      <view class='tem_btn' bindtap='upload_img' data-index='{{idx}}'>更换图片</view>
+    </view>
+    <view class='flex'>
+      <view>奖品类型</view>
+      <i-button type="ghost" bindtap="handleOpen">{{open_type ? open_type : '选择奖品类型'}}</i-button>
+      <i-action-sheet visible="{{ visible }}" show-cancel actions="{{ actions }}"  bind:cancel="handleCancel"  bind:click="handleClickItem" />
+    </view>
+    <view class='tem_set' wx:if="{{open_type == '实物奖品'}}">
+      <view class='flex'>
+        <view>奖品名称</view>
+        <input placeholder='奖品名称' value='{{gift_name}}' bindinput='getGift_name'></input>
+      </view>
+      <view class='flex'>
+        <view>奖品数量</view>
+        <input placeholder='数量' value='{{gift_number}}' type='number' bindinput='getGift_number'></input>
+      </view>
+      <view class='flex'>
+        <view>商品原价</view>
+        <input value='{{price1}}' type='number' bindinput='price1'></input>
+        <view class='coin'>元</view>
+      </view>
+      <view class='flex'>
+        <view>秒杀价格</view>
+        <input value='{{price2}}' type='number' bindinput='price2'></input>
+        <view class='coin'>酒币</view>
+      </view>
+    </view>
+    <view class='tem_set' wx:if="{{open_type == '酒币秒杀'}}">
+      <view class='flex'>
+        <view>酒币数量</view>
+        <input placeholder='数量' value='{{price2}}' bindinput='coin_num' type='number'></input>
+      </view>
+    </view>
+  </view>
+  <view class='activity_set'>
+    <view>
+      <view class='flex'>
+        <view>开始时间</view>
+        <picker mode="date" value="{{date_start}}" start="2000-01-01" end="2050-01-01" bindchange="bindDateChange1" style='width:80%;'>
+          <view class="picker">{{date_start}}</view>
+        </picker>
+      </view>
+      <view class='flex'>
+        <view>结束时间</view>
+        <picker mode="date" value="{{date_end}}" start="2000-01-01" end="2050-01-01" bindchange="bindDateChange2" style='width:80%;'>
+          <view class="picker">{{date_end}}</view>
+        </picker>
+      </view>
+      <view class='flex'>
+        <view>秒杀时间</view>
+        <picker mode="time" value="{{seckill_time}}" start="00:00" end="24:00" bindchange="bindDateChange3" style='width:80%;'>
+          <view class="picker">{{seckill_time}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class='activity_introduce'>
+    <view class='flex'>
+      <view class='flex_start'>抽奖说明</view>
+      <textarea  placeholder="填写此次抽奖的说明（非必填)" value="{{textVal}}" bindinput='textVal'></textarea>
+    </view>
+  </view>
+  <button class='btn' bindtap='dialog'>{{waId ? '编辑活动' : '发起活动'}}</button>
+</view>

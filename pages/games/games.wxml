@@ -1,0 +1,21 @@
+<!--pages/games/games.wxml-->
+<view class='games_block'>
+  <view class='shadow'>
+    <image class='games_img' src='{{games_img}}' mode="widthFix"/>
+    <view class='games_introduce'>
+      <text class='games_title'>大富翁，通关送酒</text>
+      <text class='games_time'>活动时间：2018.01.01-2019.12.30</text>
+      <text class='games_number'>剩余奖品数量：500瓶 </text>
+      <text class='games_rule1'>规则： </text>
+      <text class='games_rule2'>10酒币/次 </text>
+      <view class='games_btn'>
+        <text>开始游戏</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='footer'>
+  <image class='footer_img' src='{{footer_img}}' mode="widthFix"/>
+  <text class='footer_text'>更多游戏活动敬请期待</text>
+</view>

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "经销商工具台",
+  "navigationBarBackgroundColor": "#FFD630",
+  "usingComponents": {
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index"
+  }
+}

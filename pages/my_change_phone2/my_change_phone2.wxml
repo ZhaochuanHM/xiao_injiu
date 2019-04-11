@@ -1,0 +1,16 @@
+<!--pages/my_change_phone2/my_change_phone2.wxml-->
+<view class='container'>
+  <view class='content'>
+    <view class='item'>
+      <image src='/images/my/login_icon_phone_nor.png'></image>
+      <input placeholder='请输入手机号码' maxlength='11' value='{{tel}}' bindinput='changetel'></input>
+    </view>
+    <view class='item'>
+      <image src='/images/my/login_icon_code_pre.png'></image>
+      <input placeholder='请输入验证码' maxlength='4' value='{{checkcode}}' bindinput='changecheckcode'></input>
+      <!-- <view class='color_red' bindtap='countDown'>{{countDownNum}}</view> -->
+      <button type="warn"  disabled="{{disabled}}" bindtap="countDown" size="mini">{{countDownNum}}</button>
+    </view>
+  </view>
+  <view class='btn' bindtap='submit'>提交</view>
+</view>

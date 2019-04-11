@@ -1,0 +1,174 @@
+/* pages/dealer_tools/dealer_tools.wxss */
+page{
+  background-color: #F5F5F5;
+}
+.header{
+  background-color: #ffffff;
+}
+.header_img{
+  width: 100%;
+  position: relative;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.title_box{
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 30rpx;
+  left: 0;
+  right: 0;
+}
+.title_name{
+  font-weight: 600;
+  float: left;
+  vertical-align: middle;
+  margin-left: 30rpx;
+}
+.title_address{
+  vertical-align: middle;
+  background-color: #F5F5F5;
+  padding: 5rpx 20rpx;
+  border-radius: 30rpx;
+  float: right;
+  font-size: 30rpx;
+  margin-right:30rpx; 
+}
+.in_coin_box{
+  text-align: center;
+  padding: 20rpx 0rpx;
+}
+.coin_num_text{
+  color: #808080;
+  font-size: 30rpx;
+  display: block;
+}
+.coin_num{
+  color: #FF6E3D;
+  font-size: 60rpx;
+  font-weight: 600;
+  display: block;
+}
+.coin_freeze{
+  color: #B3B3B3;
+  font-size: 25rpx;
+}
+.recharge_btn{
+  background-color: #FFD630;
+  width: 150rpx;
+  margin: 20rpx auto;
+  font-size: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 40rpx;
+}
+.block1_title_box{
+  padding: 30rpx 20rpx;
+  text-align: left;
+  border-bottom:1px solid #E6E6E6
+}
+.block1_title_tips{
+  height: 25rpx;
+  width: 25rpx;
+  background-color: #FFD630;
+  border-radius: 5rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.block1_title_text{
+  display: inline-block;
+  font-size: 35rpx;
+  vertical-align: middle;
+  margin-left: 15rpx;
+  font-weight: 600;
+}
+.block1{
+  text-align: center;
+  margin: auto;
+  background-color: #ffffff;
+  margin-top: 25rpx;
+  padding-bottom: 20rpx;
+}
+.block_num1{
+  font-weight: 600;
+  display: block;
+  font-size: 40rpx;
+  margin-top: 20rpx;
+}
+.block_text1{
+  display: block;
+  font-size: 30rpx;
+  color: #808080;
+  margin-bottom: 20rpx;
+}
+.block_num2{
+  font-weight: 600;
+  display: block;
+  font-size: 40rpx;
+  margin-top: 20rpx;
+}
+.block_text2{
+  display: block;
+  font-size: 30rpx;
+  color: #808080;
+  margin-bottom: 20rpx;
+}
+.tool_img1{
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.tool_text1{
+  font-size: 30rpx;
+  color: #808080;
+}
+.tool_img2{
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.tool_text2{
+  font-size: 30rpx;
+  color: #808080;
+}
+.tool_img3{
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.tool_text3{
+  font-size: 30rpx;
+  color: #808080;
+}
+.block2{
+  text-align: center;
+  margin: auto;
+  background-color: #ffffff;
+  margin-top: 25rpx;
+  padding-bottom: 20rpx;
+}
+.btn_info{
+  color: #808080;
+  font-size: 30rpx;
+  border: 1px solid #808080;
+  width: 100rpx;
+  border-radius: 20rpx;
+  margin: 0 auto; 
+}
+.all_order{
+  display: inline-block;
+  font-size: 30rpx;
+  color: #808080;
+  margin-left: 370rpx;
+}

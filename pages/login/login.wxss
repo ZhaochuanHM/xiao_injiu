@@ -1,0 +1,55 @@
+/* pages/login/login.wxss */
+.content{
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 55vh;
+}
+.login_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login_icon{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+.about{
+  font-size: 35rpx;
+  font-weight: 600;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+}
+.tips_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tips1{
+  font-size: 20rpx;
+  margin-top: 10rpx;
+  color: #7E86A3;
+}
+.tips2{
+  font-size: 20rpx;
+  margin-bottom: 200rpx;
+  color: #7E86A3;
+}
+.lgoin{
+  height: 85rpx;
+  font-size: 35rpx;
+  color: #fff;
+  text-align: center;
+  width: 60%;
+  background-color: #FF1A1A;
+  border-radius: 44rpx;
+  margin: 0 auto;
+  line-height: 85rpx;
+}

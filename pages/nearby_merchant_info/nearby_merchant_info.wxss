@@ -1,0 +1,67 @@
+/* pages/nearby_merchant_info.wxss */
+.merchant_info_box{
+  height: 70rpx;
+  line-height: 60rpx;
+  border-bottom: 1px solid #E6E6E6;
+  padding: 20rpx 0rpx;
+}
+.merchant_info_title{
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  vertical-align: middle;
+  font-weight: 600;
+}
+.liveness_img{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 100rpx;
+  vertical-align: middle;
+}
+.merchant_destance{
+  font-size: 20rpx;
+  color: #B3B3B3;
+  vertical-align: middle;
+  margin-left: 150rpx;
+}
+.merchant_address_box{
+  position: relative;
+  height: 70rpx;
+  line-height: 36rpx;
+  border-bottom: 1px solid #E6E6E6;
+  padding: 20rpx 0rpx;
+}
+.merchant_info_address{
+  display: inline-block;
+  margin-left: 30rpx;
+  color: #666666;
+  font-size: 20rpx;
+  width: 350rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.gps{
+  position: absolute;
+  top: 25rpx;
+  right: 90rpx;
+}
+.gps_img{
+  display: block;
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: middle;
+  margin-left: 7rpx;
+}
+.gps_text{
+  font-size: 25rpx;
+  color: #6F6F6F;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}

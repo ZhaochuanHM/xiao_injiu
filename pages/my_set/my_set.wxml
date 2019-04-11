@@ -1,0 +1,28 @@
+<!--pages/my_set/my_set.wxml-->
+<view class='container'>
+  <view class='head'>
+    <view>头像</view>
+    <image src="{{logo}}"></image>
+  </view>
+  <view class='item'>
+    <view>名字</view>
+    <view class='right'>{{name}}</view>
+  </view>
+  <!-- <view class='item'>
+    <view>生日 </view>
+    <view>
+      <view class='change'>{{year}}年{{month}}月{{day}}日</view>
+    </view>
+  </view> -->
+  <view class='item'>
+    <view>性别</view>
+    <view>{{sex}}</view>
+  </view>
+  <view class='item'>
+    <view>手机号</view>
+    <view>
+      <text>{{tel}}</text>
+      <text class='change' bindtap='pageTo' data-url="{{url}}">[更改]</text>
+    </view>
+  </view>
+</view>

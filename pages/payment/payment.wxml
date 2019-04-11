@@ -1,0 +1,88 @@
+<!--pages/payment/payment.wxml-->
+<view class='pay_header clearfix'>
+  <view class='left'>
+    <text class='company_name'>晨阳酒业</text>
+    <text class='company_area'>绵阳区域</text>
+  </view>
+  <view class='right'>
+    <text class='balance'>余4000.00酒币</text>
+  </view>
+</view>
+
+<view class='block1'>
+  <view class='block1_title_box'>
+    <view class='block1_title_tips'></view>
+    <view class='block1_title_text'>酒币充值</view>
+  </view>
+
+  <view class='line1'>
+    <view class='line1_item'>
+      <view class='line1_item_price'>
+        <text class='line1_item_price_num'>100</text>
+        <text class='line1_item_price_text'>酒币</text>
+      </view>
+      <view class='rmb'>
+        <text>￥100.00</text>
+      </view>
+    </view>
+    <view class='line1_item'>
+      <view class='line1_item_price'>
+        <text class='line1_item_price_num'>100</text>
+        <text class='line1_item_price_text'>酒币</text>
+      </view>
+      <view class='rmb'>
+        <text>￥100.00</text>
+      </view>
+    </view>
+    <view class='line1_item'>
+      <view class='line1_item_price'>
+        <text class='line1_item_price_num'>100</text>
+        <text class='line1_item_price_text'>酒币</text>
+      </view>
+      <view class='rmb'>
+        <text>￥100.00</text>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='line2'>
+    <view class='line1_item'>
+      <view class='line1_item_price'>
+        <text class='line1_item_price_num'>100</text>
+        <text class='line1_item_price_text'>酒币</text>
+      </view>
+      <view class='rmb'>
+        <text>￥100.00</text>
+      </view>
+    </view>
+    <view class='line1_item'>
+      <view class='line1_item_price'>
+        <text class='line1_item_price_num'>100</text>
+        <text class='line1_item_price_text'>酒币</text>
+      </view>
+      <view class='rmb'>
+        <text>￥100.00</text>
+      </view>
+    </view>
+    <view class='line1_item'>
+      <view class='line1_item_price'>
+        <text class='line1_item_price_num'>100</text>
+        <text class='line1_item_price_text'>酒币</text>
+      </view>
+      <view class='rmb'>
+        <text>￥100.00</text>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<view class='tips'>
+  <text class='tips1'>使用提示</text>
+  <view class='rules'>
+    <text class='tips2'>1.酒币的充值兑换比例为：1人民币=100酒币;</text>
+    <text class='tips3'>2.酒币只能用于活动保证金和消费，不能提现或转让;</text>
+    <text class='tips4'>3.您在充值和支付中遇到任何问题，都可以联系客服：028-12345678</text>
+  </view>
+</view>

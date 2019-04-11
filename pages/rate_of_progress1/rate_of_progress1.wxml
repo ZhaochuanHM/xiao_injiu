@@ -1,0 +1,90 @@
+<!--pages/rate_of_progress1/rate_of_progress1.wxml-->
+<view class='header'>
+    <image class='header_img' src='{{header_img}}' mode="widthFix"/>
+    <view class='all'>
+      <text class='all_text'>抽奖占比</text>
+      <text class='percent'>60%</text>
+      <i-progress percent="60" status="normal" hide-info='true' stroke-width='20'></i-progress>
+    </view>
+
+    <view class='count'>
+      <i-row>
+        <i-col span="12" i-class="col-class">
+          <text class='count_text'>已抽取数</text>
+          <text class='count_val'>356748</text>
+        </i-col>
+        <i-col span="12" i-class="col-class">
+          <text class='count_text'>抽奖总数</text>
+          <text class='count_val'>500000</text>
+        </i-col>
+      </i-row>
+    </view>
+
+    <view class='area_list_box'>
+      <view class='area_list'>
+        <view class='line1'>
+          <text class='line1_text'>绵阳</text>
+          <view class='line1_count'>
+            <text class='line1_count_text'>已抽取数：</text>
+            <text class='line1_count_num'>2321321次</text>
+            <text class='line1_count_text'>抽奖总数：</text>
+            <text class='line1_count_num'>3213131次</text>
+          </view>
+        </view>
+        <i-progress percent="45" status="normal"></i-progress>
+      </view>
+
+      <view class='area_list'>
+        <view class='line1'>
+          <text class='line1_text'>成都</text>
+          <view class='line1_count'>
+            <text class='line1_count_text'>已抽取数：</text>
+            <text class='line1_count_num'>2321321次</text>
+            <text class='line1_count_text'>抽奖总数：</text>
+            <text class='line1_count_num'>3213131次</text>
+          </view>
+        </view>
+        <i-progress percent="20" status="normal"></i-progress>
+      </view>
+
+      <view class='area_list'>
+        <view class='line1'>
+          <text class='line1_text'>乐山</text>
+          <view class='line1_count'>
+            <text class='line1_count_text'>已抽取数：</text>
+            <text class='line1_count_num'>2321321次</text>
+            <text class='line1_count_text'>抽奖总数：</text>
+            <text class='line1_count_num'>3213131次</text>
+          </view>
+        </view>
+        <i-progress percent="75" status="normal"></i-progress>
+      </view>
+
+      <view class='area_list'>
+        <view class='line1'>
+          <text class='line1_text'>自贡</text>
+          <view class='line1_count'>
+            <text class='line1_count_text'>已抽取数：</text>
+            <text class='line1_count_num'>2321321次</text>
+            <text class='line1_count_text'>抽奖总数：</text>
+            <text class='line1_count_num'>3213131次</text>
+          </view>
+        </view>
+        <i-progress percent="95" status="normal"></i-progress>
+      </view>
+
+      <view class='area_list'>
+        <view class='line1'>
+          <text class='line1_text'>重庆</text>
+          <view class='line1_count'>
+            <text class='line1_count_text'>已抽取数：</text>
+            <text class='line1_count_num'>2321321次</text>
+            <text class='line1_count_text'>抽奖总数：</text>
+            <text class='line1_count_num'>3213131次</text>
+          </view>
+        </view>
+        <i-progress percent="10" status="normal"></i-progress>
+      </view>
+
+    </view>
+</view>

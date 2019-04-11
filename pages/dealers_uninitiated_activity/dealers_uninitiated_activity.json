@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "未开始活动",
+  "usingComponents": {
+    "load-more": "../../component/load-more/load-more"
+  }
+}

@@ -1,0 +1,261 @@
+/* pages/welfare/welfare.wxss */
+.header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: #ffffff;
+}
+/*免费抽奖*/
+.welfare_box1{
+  padding: 0 40rpx;
+  padding-top:42px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box; 
+}
+
+.welfare_img{
+  border-radius: 30rpx 30rpx 0rpx 0rpx;
+  width: 100%;
+}
+.welfare_introduce{
+  position: relative;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 0rpx 0rpx 30rpx 30rpx;
+  padding: 15rpx 20rpx;
+}
+.welfare_title{
+  font-size: 35rpx;
+  font-weight: 600;
+  display: block;
+}
+.welfare_time{
+  color: #6F6F6F;
+  font-size: 25rpx;
+  display: block;
+  margin-top: 10rpx;
+}
+.welfare_number{
+  color: #EA0F0F;
+  font-size: 25rpx;
+  display: block;
+  margin-bottom: 10rpx;
+}
+.shadow{
+  border-radius: 30rpx 30rpx 30rpx 30rpx;
+  box-shadow: 0 0 20px rgba(230,230,230,1);
+  margin-top: 25rpx;
+  border: 0.5px solid #E5E5E5;
+  position: relative;
+}
+.is_activity{
+  position: absolute;
+  right: 0;
+  top: 50rpx;
+  width: 110rpx;
+  height: 40rpx;
+}
+
+/*商品抢购*/
+.welfare_box2{
+  padding-top:42px;
+  width: 100%;
+}
+.goods_list{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  border-bottom: 1px solid #E6E6E6;
+  position: relative;
+  padding: 30rpx 0rpx;
+}
+.goods_iterm1{
+  align-items:stretch;
+}
+.goods_img{
+  width: 180rpx;
+  height: 180rpx;
+  vertical-align: middle;
+  margin: 20rpx;
+  border: 0.5rpx solid #DCDCDC;
+}
+
+.goods_iterm2{
+  align-items:stretch;
+  text-align: left;
+}
+.goods_title{
+  display: block;
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-top:20rpx; 
+}
+.goods_info{
+  display: block;
+}
+.goods_support{
+  font-size: 25rpx;
+  text-align: left;
+  color: #FF6E3D;
+  background-color: #FFECE5;
+  margin-top:10rpx;
+  padding: 5rpx 15rpx; 
+  border-radius:30rpx; 
+}
+.good_state{
+  display: block;
+  width: 500rpx;
+}
+.good_state1{
+  display: inline-block;
+}
+.state1_img{
+  height: 30rpx;
+  width: 30rpx;
+  vertical-align: middle;
+}
+.state1_text{
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  vertical-align: middle;
+  color: #6F6F6F;
+}
+.good_state2{
+  margin-left: 20rpx;
+  display: inline-block;
+}
+.state2_img{
+  height: 30rpx;
+  width: 30rpx;
+  vertical-align: middle;
+}
+.state2_text{
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  vertical-align: middle;
+  color: #6F6F6F;
+}
+.goods_price{
+  display: block;
+}
+.peice1{
+  color: #EA0F0F;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.peice2{
+  margin-left: 10rpx;
+  color: #999999;
+  font-size: 20rpx;
+  text-decoration:line-through;
+}
+.goods_btn{
+  width: 150rpx;
+  text-align: center;
+  font-size: 30rpx;
+  position: absolute;
+  top: 180rpx;
+  right: 50rpx;
+  padding: 10rpx 10rpx;
+  border-radius:30rpx; 
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/*商品秒杀*/
+.welfare_box3{
+  padding: 0 40rpx;
+  padding-top:42px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box; 
+}
+
+.seckill_img{
+  border-radius: 30rpx 30rpx 0rpx 0rpx;
+  width: 100%;
+}
+.seckill_introduce{
+  position: relative;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 0rpx 0rpx 30rpx 30rpx;
+  padding: 15rpx 20rpx;
+}
+.seckill_title{
+  font-size: 35rpx;
+  font-weight: 600;
+  display: block;
+  width: 410rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.seckill_time{
+  color: #3AC984;
+  font-size: 25rpx;
+  display: block;
+  margin-top: 10rpx;
+}
+.seckill_number{
+  color: #FF6E3D;
+  font-size: 25rpx;
+  display: block;
+  margin-bottom: 10rpx;
+}
+.seckill_price{
+  position: absolute;
+  text-align: center;
+  top: 370rpx;
+  right: 50rpx;
+}
+.seckill_price1{
+  display: block;
+  color: #EA0F0F;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.seckill_price2{
+  display: block;
+  font-size: 20rpx;
+  text-decoration:line-through;
+}
+.shadow{
+  position: relative;
+  border-radius: 30rpx 30rpx 30rpx 30rpx;
+  box-shadow: 0 0 20px rgba(230,230,230,1);
+  margin-top: 25rpx;
+  border: 0.5px solid #E5E5E5;
+}
+/* 
+  btn 的颜色设置
+ */
+ .btn1{
+    background:#FF1A1A!important;
+    color:#FFFFFF!important;
+ }
+  .btn2{
+    background:#3AC984!important;
+    color:#FFFFFF!important;
+ }
+  .btn3{
+    background:#FFD630!important;
+    color:#EA0F0F!important;
+ }
+  .btn4{
+    background:#808080!important;
+    color:#FFFFFF!important;
+ }

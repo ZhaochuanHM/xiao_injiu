@@ -1,0 +1,47 @@
+/* pages/my_set/my_set.wxss */
+.container{
+  box-sizing: border-box;
+  background: #F2F2F2;
+  border-top: 1px solid #F2F2F2;
+  min-height: 100vh;
+}
+.head{
+  background: #fff;
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx 0;
+}
+.head>image{
+  border-radius: 50%;
+  width: 140rpx;
+  height: 140rpx; 
+}
+.item{
+  border-bottom: 1px solid #E6E6E6;
+  background: #fff;
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32rpx;
+  color: #808080;
+}
+.item>view:first-child{
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #000;
+}
+.item>.right{
+  text-align: right;
+}
+/* 改手机号 */
+.change{
+  color: #4429F2;
+  margin-left: 20rpx;
+}

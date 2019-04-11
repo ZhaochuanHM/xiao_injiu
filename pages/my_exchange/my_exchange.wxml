@@ -1,0 +1,35 @@
+<!--pages/my_exchange/my_exchange.wxml-->
+<view class='container'>
+  <view class='item' wx:for="{{arr}}" wx:key="index">
+    <view class='head'>
+      <image src="{{item.url}}"></image>
+      <view class='text'>
+        <view class='goods_name'>{{item.good_name}}</view>
+        <view wx:if="{{item.state == 1}}" class='link'>
+          <text>{{item.kind}}</text>
+          <text>{{item.code}}</text>
+          <text>复制</text>
+        </view>
+      </view>
+      <view class="state {{item.state == 0 ? 'orange' : 'green' }}">
+        {{item.state == 0 ? '未发货' : '已发货'}}
+      </view>
+    </view>
+    <view class='add_box'>
+      <view class="add_icon {{item.status? 'up' : 'down'}}" bindtap='changeShow' data-index="{{index}}">
+      收货地址
+      </view>
+      <view class="address {{item.status? 'show' : ''}}"
+        bindtap="{{item.state == 0 ? 'changeAddress' : ''}}"
+        data-index="{{index}}">
+        <view class="add_title">
+          <text>{{item.name}}</text>
+          <text>{{item.tel}}</text>
+        </view>
+        <view class='add_detail'>
+        {{item.address}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

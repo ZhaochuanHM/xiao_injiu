@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "参与抽奖用户",
+  "usingComponents": {
+    "load-more": "../../component/load-more/load-more"
+  }
+}

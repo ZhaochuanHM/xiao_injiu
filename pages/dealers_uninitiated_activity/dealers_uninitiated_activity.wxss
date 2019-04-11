@@ -1,0 +1,32 @@
+@import '/pages/dealers_template/dealers_template';
+.pop{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0,0,0,0.4);
+  top: 0;
+}
+.pop_box{
+  width: 80vw;
+  height: 56vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  border-radius: 30rpx;
+  padding: 5vw;
+}
+.pop_title{
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 5vw;
+}
+.message{
+  font-size: 30rpx;
+  color: #808080;
+  text-align: center;
+}

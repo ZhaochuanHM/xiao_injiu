@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "五粮春50度",
+  "usingComponents": {
+    "load-more": "/component/load-more/load-more"
+  }
+}

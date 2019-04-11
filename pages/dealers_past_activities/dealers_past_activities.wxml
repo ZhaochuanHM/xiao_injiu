@@ -1,0 +1,10 @@
+<!--pages/dealers_past_activities/dealers_past_activities.wxml-->
+<!-- 往期活动 -->
+<import src="/pages/dealers_template/dealers_template.wxml"/>
+<view class='container'>
+  <template is="activity" data="{{...datas}}"></template>
+  <view>
+    <load-more id='loadMoreView' bindloadMoreListener='loadMoreListener' bindclickLoadMore='clickLoadMore'></load-more>
+  </view>
+</view>
+

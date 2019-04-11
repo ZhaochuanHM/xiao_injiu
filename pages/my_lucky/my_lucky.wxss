@@ -1,0 +1,195 @@
+/* pages/my_lucky/my_lucky.wxss */
+view{
+  box-sizing: border-box;
+}
+.container{
+  background: #F2F2F2;
+  font-size: 24rpx;
+  box-sizing: border-box;
+  border-top: 1px solid #F2F2F2;
+  min-height: 100vh;
+}
+/* tabar */
+.tabar{
+  margin: 30rpx auto;
+  width: 55vw;
+  display: flex;
+  align-items: center;
+  height: 65rpx;
+  /* border-radius: 10rpx; */
+  text-align: center;
+  background: #fff;
+  box-sizing: border-box;
+}
+.tabar>view{
+  width: 28vw;
+  height: 65rpx;
+  line-height: 65rpx;
+  color: #808080;
+  box-sizing: border-box;
+}
+.tabar>view:nth-child(1){
+  border-radius: 10rpx 0 0 10rpx; 
+  border-left: 1px solid #B3B3B3;
+  border-top: 1px solid #B3B3B3;
+  border-bottom: 1px solid #B3B3B3;
+}
+/* .tabar>view:nth-child(2){
+  border-right: 1px solid #B3B3B3;
+  border-left: 1px solid #B3B3B3;
+  border-bottom: 1px solid #B3B3B3;
+  border-top: 1px solid #B3B3B3;
+} */
+.tabar>view:nth-child(2){
+  border-radius: 0 10rpx 10rpx 0; 
+  border-bottom: 1px solid #B3B3B3;
+  border-top: 1px solid #B3B3B3;
+  border-right: 1px solid #B3B3B3;
+}
+.red{
+  position: relative;
+  z-index: 99;
+  margin: 0 -1px;
+  background: #FF1A1A;
+  color: #fff!important;
+  border: 1px solid #FF1A1A!important;
+}
+
+/* 免费抽奖 */
+/* 待开奖 */
+.free_box{
+  display: none;
+}
+.state{
+  width: 100%;
+  padding: 0 5%;
+}
+.item{
+  margin: 20rpx 0;
+}
+.active{
+  width: 100%;
+  position: relative;
+  height: 48vw;
+}
+.active>image{
+  width: 100%;
+  height: 100%;
+}
+.active>view{
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 20rpx;
+  top: 20rpx;
+  right: 20rpx;
+  padding: 10rpx 30rpx;
+  position: absolute;
+}
+.introduce{
+  box-sizing: border-box;
+  width: 100%;
+  height: 150rpx;
+  padding: 0 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+.goods_name{
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.introduce>view:last-child,.activity_introduce>view:last-child,.record_detail>view:last-child{
+  color: #808080; 
+}
+/* 已结束 */
+.end_item{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 20rpx 5vw;
+  margin: 20rpx 0;
+  background: #fff;
+  align-items: center;
+}
+.end_goods{
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.time{
+  color: #B3B3B3;
+  font-size: 24rpx;
+}
+.time:after{
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #D4D4D4;
+  border-right: 1px solid #D4D4D4;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+/* 活动抽奖 */
+.activity_box{
+  display: none;
+  }
+.activity_item{
+  background: #fff;
+  padding: 5vw;
+  margin: 20rpx 0;
+}
+.activity_item>image{
+  border-radius: 20rpx;
+  width: 90vw;
+  height: 26vw;
+}
+/* 中奖记录 */
+.winning_record{
+  display: none;
+}
+.record_item{
+  background: #fff;
+  margin: 20rpx 0;
+}
+.record_title{
+  width: 100vw;
+  padding: 20rpx 5vw;
+  border-bottom: 1px solid #EEEEEE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #808080;
+  font-size: 24rpx;
+}
+.record_content{
+  width: 100vw;
+  padding: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.record_content>image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 1px solid #E6E6E6;
+}
+.record_detail{
+  width: 75%;
+  text-align: left;
+}
+.record_detail>.goods_name{
+  margin: auto!important;
+}
+.code{
+  color: #4429F2;
+  font-size: 24rpx;
+  font-weight: bold;
+}
+.show{
+  display: block!important;
+}
+
+

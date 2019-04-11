@@ -1,0 +1,182 @@
+/* pages/orders_centre/orders_centre.wxss */
+view{
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.container{
+  width: 100vw;
+  min-height: 100vh;
+}
+/* 头部 */
+.head{
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.head>view{
+  width: 30%;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.border_bottom{
+  font-weight: bold;
+  color: #FF1A1A;
+  border-bottom:1px solid #FF1A1A; 
+}
+/* content */
+.content{
+  width: 100%;
+  min-height: 50vh;
+  overflow: auto;
+  background: #F5F5F5;
+}
+.item{
+  width: 100%;
+  margin: 20rpx 0;
+  background: #fff;
+}
+.title{
+  display: flex;
+  width: 100%;
+  padding: 20rpx 5%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EEEEEE;
+}
+.left{
+  display: flex;
+  align-items: center;
+  color: #808080;
+  font-size: 24rpx;
+}
+.role{
+  display: block;
+  padding: 5rpx 10rpx;
+  border-radius: 10rpx;
+  color: #3AC984;
+  border:1px solid #3AC984;
+  margin-left: 10rpx;
+}
+.right{
+  font-weight: bold;
+}
+/* 待完善 */
+.color1{
+  color: #EA0F0F;
+}
+/* 待审核 */
+.color2{
+  color: #FF6E3D;
+}
+/* 待配货 */
+.color3{
+  color: #02A9FF;
+}
+/* 待收货 */
+.color4{
+  color: #3AC984;
+}
+/* 订单完成 */
+.color5{
+  color: #808080;
+}
+/* 审核不通过 */
+.color6{
+  color: #EA0F0F;
+}
+.info{
+  padding: 20rpx 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info>.goods_img{
+  width: 120rpx;
+  height: 120rpx;
+}
+.info>.phone_img{
+  width: 40rpx;
+  height: 40rpx;
+}
+.center{
+  width: 65%;
+  color: #808080;
+}
+.center>view:first-child{
+  font-weight: bold;
+  font-size: 30rpx;
+  color: #000;
+}
+.unit{
+  font-size: 24rpx;
+  color: #808080;
+}
+.handle{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30rpx; 
+}
+.handle>view{
+  border-radius: 35rpx;
+  text-align: center;
+  padding: 15rpx 45rpx;
+}
+.completion_btn{
+  color: #FF6E3D;
+  border:1px solid #FF6E3D;
+}
+.audit_btn{
+  border-radius: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30rpx; 
+}
+.audit_btn>view{
+  border-radius: 35rpx;
+  text-align: center;
+  padding: 15rpx 45rpx;
+  margin: 0 20rpx;
+}
+.audit_btn>view:first-child{
+  border: 1px solid #B3B3B3;
+  color: #808080; 
+}
+.audit_btn>view:last-child{
+  border: 1px solid #3AC984;
+  color: #FFFFFF;
+  background: #3AC984;
+}
+.out_btn{
+  color: #4429F2;
+  border: 1px solid #4429F2;
+}
+.accept_btn{
+  color: #FF6E3D;
+  border:1px solid #FF6E3D;
+}
+.no_pass{
+  width: 30rpx;
+  height: 30rpx;
+  display: inline-block;
+  vertical-align: -13%
+}
+/* code */
+.code{
+  border: 1px solid #E6E6E6;
+  background: #fff;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.code+view{
+  text-align: center;
+  color: #EA0F0F;
+  margin-top: 20rpx;
+}

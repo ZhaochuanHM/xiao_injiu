@@ -1,0 +1,38 @@
+<!--pages/address_list/address_list.wxml-->
+<view class='container'>
+<view class='content'>
+  <view class='list_item' wx:for="{{addressList}}" wx:key="index" bindtap='choiceAddress' data-index="{{index}}">
+    <view class='user_infor'>
+      <view class='user'>
+        <text>{{item.consignee}}</text>
+        <text>{{item.mobile}}</text>
+      </view>
+      <view class='address'>{{item.province}} {{item.city}} {{item.district}} {{item.address}}</view>
+    </view>
+    <view class='tools'>
+      <view class='left' 
+      catchtap='changeDefault'
+       data-id="{{item.address_id}}">
+        <image src="{{!item.is_default ? defaultUrl1 : defaultUrl}}"></image>
+        <view>默认地址</view>
+      </view>
+      <view class='right'>
+        <view
+        catchtap='pageTo'
+       data-url="/pages/address_edit/address_edit?address_id={{item.address_id}}">
+          <image src='/images/ads_edit.png'></image>
+          <view>编辑</view>
+        </view>
+        <view 
+        catchtap='delete'
+        data-id="{{item.address_id}}">
+          <image src='/images/ads_delete.png'></image>
+          <view>删除</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+  <button class='add_address' bindtap='pageTo' data-url="/pages/address_add/address_add">新增地址</button>
+</view>

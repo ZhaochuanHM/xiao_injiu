@@ -1,0 +1,31 @@
+<!--pages/address_add/address_add.wxml-->
+<view class='container'>
+  <view class='content'>
+    <view class='item'>
+      <view>收货人</view>
+      <input placeholder='收货人姓名' bindinput='input' data-type="user"></input>
+    </view>
+    <view class='item'>
+      <view>电话</view>
+      <input placeholder='电话号码' type='tel'  bindinput='input' data-type="tel" maxlength='11'></input>
+    </view>
+    <view class='item'>
+      <view>所在地址</view>
+      <view class='choice_area' bindtap='getAddress'>
+      <text>{{location}}</text>
+      <view class='icon'></view>
+      </view>
+    </view>
+    <view class='item'>
+      <view style='align-self:flex-start;'>详细地址</view>
+      <textarea placeholder='街道、楼牌号等'  bindinput='input' data-type="area"></textarea>
+    </view>
+    <view class='item is_defult'>
+      <view>默认地址</view>
+      <view class="body-view">
+        <switch bindchange='checked' checked="{{!is_check ? false : 'checked'}}"/>
+      </view>
+    </view>
+  </view>
+  <button class='save' bindtap='save'>保存</button>
+</view>

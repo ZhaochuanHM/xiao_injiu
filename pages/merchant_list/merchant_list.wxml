@@ -1,0 +1,27 @@
+<!--pages/merchant_list/merchant_list.wxml-->
+<view class='container'>
+  <view class='search_box'>
+    <view class='search shadow'>
+     <icon type="search" size="15" />
+     <input placeholder='输入商户名或手机号'></input>
+     <view class='search_btn'>搜索</view>
+    </view>
+  </view>
+
+  <view class='body'>
+    <view class='merchant_list'>
+      <image class='merchant_list_img' src='../../images/merchantlist_icon_merchant@3x.png' mode="widthFix"/>
+      <view class='merchant_list_info'>
+          <view class='info1'>老王烟酒铺</view>
+          <view class='info2'>高新区益州中段大道1999号</view>
+          <view class='info3'>
+            <image class='info3_img1' src='../../images/merchantlist_icon_boss@3x.png' mode="widthFix"/>
+            <text class='info_text'>王思聪</text>
+            <image class='info3_img2' src='../../images/merchantlist_icon_phone@3x.png' mode="widthFix"/>
+            <text class='info_text'>13888888888</text>
+          </view>
+      </view>
+      <view class='edit_btn'>编辑</view>
+    </view>
+  </view>
+</view>

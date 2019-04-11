@@ -1,0 +1,9 @@
+<!--pages/participation_lottery/participation_lottery.wxml-->
+<view class='people_list'>
+  <view class='people_list_title'>{{userNub}} 位参与者</view>
+  <view class='people_list_img_box'>
+    <image class='people_list_img' src='{{item.headimg}}' mode="widthFix" wx:for="{{DataList}}" wx:key="index"/>
+  </view>
+  <view class='more' bindtap='clickLoadMore' wx:if="{{loadMore}}">加载更多</view>
+  <load-more class='more' id="loadMore" ></load-more>
+</view>

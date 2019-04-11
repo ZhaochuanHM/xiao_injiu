@@ -1,0 +1,130 @@
+/* pages/payment/payment.wxss */
+page{
+  background-color: #F5F5F5;
+}
+.pay_header{
+  background-color: #ffffff;
+  margin: 20rpx 0rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.left{
+  float: left;
+  margin-left: 20rpx;
+}
+.company_name{
+  font-weight: 600;
+  vertical-align: middle;
+}
+.company_area{
+  background-color: #F5F5F5;
+  font-size: 20rpx;
+  vertical-align: middle;
+  padding: 5rpx 15rpx;
+  border-radius: 30rpx;
+  margin-left: 10rpx;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.right{
+  float: right;
+  margin-right: 20rpx;
+}
+.balance{
+  color: #FF6E3D;
+  vertical-align: middle;
+  font-size: 30rpx;
+}
+.block1{
+  text-align: center;
+  margin: auto;
+  background-color: #ffffff;
+  margin-top: 25rpx;
+  padding-bottom: 20rpx;
+}
+.block1_title_box{
+  padding: 30rpx 20rpx;
+  text-align: left;
+  border-bottom:1px solid #E6E6E6
+}
+.block1_title_tips{
+  height: 25rpx;
+  width: 25rpx;
+  background-color: #FFD630;
+  border-radius: 5rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.block1_title_text{
+  display: inline-block;
+  font-size: 35rpx;
+  vertical-align: middle;
+  margin-left: 15rpx;
+  font-weight: 600;
+}
+.line1{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:space-around;
+  margin-top: 30rpx;
+}
+.line1_item{
+  border: 1px solid #FFD630;
+  width: 210rpx;
+  border-radius: 10rpx;
+}
+.line1_item_price{
+  margin-top:20rpx;
+  margin-bottom: 5rpx; 
+}
+.line1_item_price_num{
+  font-weight: 600;
+  color: #FF6E3D;
+}
+.line1_item_price_text{
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #FF6E3D;
+}
+.rmb{
+  font-size: 25rpx;
+  margin-bottom: 20rpx;
+}
+.line2{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:space-around;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+.tips{
+  font-size: 25rpx;
+  text-align: center;
+  color: #808080;
+  margin-top: 55rpx;
+
+}
+.tips1{
+  display: block;
+  margin-bottom: 45rpx;
+}
+.rules{
+  display: block;
+  text-align: left;
+  width: 80%;
+  margin: auto;
+}
+.tips2{
+  display: block;
+}
+.tips3{
+  display: block;
+}
+.tips4{
+  display: block;
+}

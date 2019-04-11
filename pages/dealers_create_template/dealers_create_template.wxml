@@ -1,0 +1,44 @@
+<!--pages/dealers_create_template/dealers_create_template.wxml-->
+<template name='create_item'>
+  <view class='tem_bg'>
+    <image src='{{item.img}}' data-name='img' data-index='{{idx}}'></image>
+    <view class='tem_btn' bindtap='upload_img' data-index='{{idx}}'>更换图片</view>
+  </view>
+  <view class='tem_set'>
+    <view class='left_icon' wx:if="{{idx != 0}}" catchtap='delete' data-index="{{idx}}">
+      <image src='/images/my/activity_icon_dele.png'></image>
+    </view>
+    <view class='right_box'>
+      <view class='flex'>
+        <view>奖品名称</view>
+        <input placeholder='奖品名称' 
+        value='{{item.name}}' 
+        bindinput='getInputVal' 
+        data-name='name'
+        data-index="{{idx}}"
+        ></input>
+      </view>
+      <view class='flex'>
+        <view>奖品数量</view>
+        <input placeholder='数量' 
+        value='{{item.number}}' 
+        bindinput='getInputVal' 
+        data-name='number'
+        data-index="{{idx}}"
+        type='number'
+        ></input>
+      </view>
+      <view class='flex'>
+        <view>原价</view>
+        <input 
+        value='{{item.price}}' 
+        bindinput='getInputVal' 
+        data-name='price'
+        data-index="{{idx}}"
+        type='number'
+        ></input>
+        <view class='coin'>酒币</view>
+      </view>
+    </view>
+  </view>
+</template>

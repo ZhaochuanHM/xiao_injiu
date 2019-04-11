@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "奖品派发",
+  "usingComponents": {
+    "i-notice-bar": "../../dist/notice-bar/index",
+    "load-more": "../../component/load-more/load-more"
+  }
+}

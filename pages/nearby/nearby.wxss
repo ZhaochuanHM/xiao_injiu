@@ -1,0 +1,155 @@
+/* pages/nearby/nearby.wxss */
+.header{
+  padding: 15rpx 0rpx;
+  width: 100%;
+  position: fixed;
+  z-index: 99999999;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+.address{
+  display: inline-block;
+}
+.address_img{
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+}
+.address_text{
+  font-size: 30rpx;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.search{
+  display: inline-block;
+  border-radius: 30rpx;
+  box-shadow: 0 0 15px rgba(230,230,230,0.8);
+
+}
+.search_img{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 30rpx;
+  margin-right: 10rpx;
+}
+.search_input{
+  width: 300rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 30rpx;
+}
+.body{
+  padding-top: 90rpx;
+}
+.merchant_list{
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content:space-around;
+  border-bottom: 1px solid #E6E6E6;
+}
+.list_iterm1{
+  align-items:stretch;
+}
+.list_img{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 20rpx;
+  vertical-align: middle;
+  margin: 20rpx;
+}
+
+.list_iterm2{
+  align-items:stretch;
+  text-align: left;
+}
+.list_title{
+  text-align: left;
+  width: 300rpx;
+  float: left;
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-top:20rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap; 
+}
+.liveness_img{
+  float: right;
+  width: 30rpx;
+  height: 30rpx;
+  margin-top:25rpx; 
+  margin-right: 100rpx;
+}
+.merchant_info{
+  display: block;
+}
+.list_address{
+  float: left;
+  font-size: 25rpx;
+  text-align: left;
+  color: #B0B0B0;
+  width: 300rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top:10rpx;
+}
+.list_distance{
+  margin-top:10rpx;
+  float: right;
+  font-size: 25rpx;
+  width: 100rpx;
+  color: #6F6F6F;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.merchant_btn{
+  display: block;
+}
+.btn1{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  float: left;
+  display: inline-block;
+  background-color: #FF1A1A;
+  border-radius: 35rpx;
+  padding: 0rpx 20rpx 0rpx 10rpx;
+  height: 50rpx;
+  line-height: 45rpx;
+
+}
+.btn1_text{
+  font-size: 25rpx;
+  color: #ffffff;
+  vertical-align: middle;
+}
+.btn2{
+  margin-top: 10rpx;
+  margin-right: 20rpx;
+  float: right;
+  display: inline-block;
+  background-color: #FFD630;
+  border-radius: 35rpx;
+  padding: 0rpx 20rpx 0rpx 10rpx;
+  height: 50rpx;
+  line-height: 45rpx;
+}
+.btn2_text{
+  font-size: 25rpx;
+  color: #EA0F0F;
+  vertical-align: middle;
+}
+

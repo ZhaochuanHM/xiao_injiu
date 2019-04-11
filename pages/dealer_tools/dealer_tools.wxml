@@ -1,0 +1,138 @@
+<!--pages/dealer_tools/dealer_tools.wxml-->
+<!-- 经销商工具 -->
+<view class='header'>
+  <image class='header_img' src='../../images/dealer_bg.png' mode="widthFix"/>
+  <view class='title_box'>
+    <text class='title_name'>{{merchant_name}}</text>
+    <text class='title_address'>{{address}}</text>
+  </view>
+  <view class='in_coin_box'>
+    <text class='coin_num_text'>积分</text>
+    <text class='coin_num'>{{integral}}</text>
+    <view class='btn_info' bindtap='integral_info'>明细</view>
+    <!-- <text class='coin_freeze'>{{freeze_coin}}</text>
+    <view class='recharge_btn' bindtap='pageTo' data-url="/pages/payment/payment">充值</view> -->
+  </view>
+</view>
+
+<view class='block1'>
+  <view class='block1_title_box'>
+    <view class='block1_title_tips'></view>
+    <view class='block1_title_text'>订单中心</view>
+    <view class='all_order'>全部订单></view>
+  </view>
+  <i-row class='line2'>
+    <i-col span="8" i-class="col-class"  bindtap='pageTo' data-url="">
+        <image class='tool_img1' src='../../images/distributor_activities_examine@3x.png' mode="widthFix"/>
+        <text class='tool_text1'>待审核</text>
+    </i-col>
+    <i-col span="8" i-class="col-class" bindtap='pageTo' data-url="">
+        <image class='tool_img2' src='../../images/distributor_activities_recegoods@3x.png' mode="widthFix"/>
+        <text class='tool_text2'>待配货</text>
+    </i-col>
+    <i-col span="8" i-class="col-class" bindtap='pageTo' data-url="">
+        <image class='tool_img2' src='../../images/distributor_activities_order@3x.png' mode="widthFix"/>
+        <text class='tool_text2'>待配货</text>
+    </i-col>
+  </i-row>
+</view>
+
+<view class='block1'>
+  <view class='block1_title_box'>
+    <view class='block1_title_tips'></view>
+    <view class='block1_title_text'>宴席管理</view>
+  </view>
+  <i-row class='line2'>
+    <i-col span="12" i-class="col-class"  bindtap='pageTo' data-url="">
+        <image class='tool_img1' src='../../images/distributor_activities_sweepcode@3x.png' mode="widthFix"/>
+        <text class='tool_text1'>货物扫码</text>
+    </i-col>
+    <i-col span="12" i-class="col-class" bindtap='pageTo' data-url="">
+        <image class='tool_img2' src='../../images/distributor_activities_usewine@3x.png' mode="widthFix"/>
+        <text class='tool_text2'>宴席用酒</text>
+    </i-col>
+  </i-row>
+</view>
+
+<view class='block1'>
+  <view class='block1_title_box'>
+    <view class='block1_title_tips'></view>
+    <view class='block1_title_text'>活动管理</view>
+  </view>
+  <i-row>
+    <i-col span="12" i-class="col-class"  bindtap='pageTo' data-url="/pages/dealers_activity/dealers_activity">
+      <text class='block_num1'>{{wa_num_handing}}</text>
+      <text class='block_text1'>进行中的活动</text>
+    </i-col>
+    <i-col span="12" i-class="col-class" bindtap='pageTo' data-url="/pages/dealers_uninitiated_activity/dealers_uninitiated_activity">
+      <text class='block_num2'>{{wa_num_not_start}}</text>
+      <text class='block_text2'>未开始的活动</text>
+    </i-col>
+  </i-row>
+
+  <i-row class='line2'>
+    <i-col span="8" i-class="col-class"  bindtap='createActvities'>
+        <image class='tool_img1' src='../../images/tool1.png' mode="widthFix"/>
+        <text class='tool_text1'>发起活动</text>
+    </i-col>
+    <i-col span="8" i-class="col-class" bindtap='pageTo' data-url="/pages/dealers_distributed/dealers_distributed">
+        <image class='tool_img2' src='../../images/tool2.png' mode="widthFix"/>
+        <text class='tool_text2'>奖品派发</text>
+    </i-col>
+    <i-col span="8" i-class="col-class" bindtap='pageTo' data-url="/pages/dealers_past_activities/dealers_past_activities">
+        <image class='tool_img2' src='../../images/tool3.png' mode="widthFix"/>
+        <text class='tool_text2'>往期活动</text>
+    </i-col>
+  </i-row>
+</view>
+
+<view class='block1'>
+  <view class='block1_title_box'>
+    <view class='block1_title_tips'></view>
+    <view class='block1_title_text'>商户管理</view>
+  </view>
+  <i-row class='line2'>
+    <i-col span="12" i-class="col-class"  bindtap='pageTo' data-url="">
+        <image class='tool_img1' src='../../images/distributor_activities_merchant@3x.png' mode="widthFix"/>
+        <text class='tool_text1'>我的商户</text>
+    </i-col>
+    <i-col span="12" i-class="col-class" bindtap='pageTo' data-url="">
+        <image class='tool_img2' src='../../images/distributor_activities_addmerchant@3x.png' mode="widthFix"/>
+        <text class='tool_text2'>新增商户</text>
+    </i-col>
+  </i-row>
+</view>
+
+
+<!-- <view class='block2'>
+  <view class='block1_title_box'>
+    <view class='block1_title_tips'></view>
+    <view class='block1_title_text'>数据查看</view>
+  </view>
+  <i-row>
+    <i-col span="12" i-class="col-class">
+      <text class='block_num1'>83231</text>
+      <text class='block_text1'>区域抽奖数</text>
+    </i-col>
+    <i-col span="12" i-class="col-class">
+      <text class='block_num2'>83213</text>
+      <text class='block_text2'>未开始的活动</text>
+    </i-col>
+  </i-row>
+
+  <i-row class='line2'>
+    <i-col span="8" i-class="col-class">
+        <image class='tool_img1' src='../../images/tool4.png' mode="widthFix"/>
+        <text class='tool_text1'>抽奖记录</text>
+    </i-col>
+    <i-col span="8" i-class="col-class">
+        <image class='tool_img2' src='../../images/tool5.png' mode="widthFix"/>
+        <text class='tool_text2'>抽奖统计</text>
+    </i-col>
+    <i-col span="8" i-class="col-class">
+        <image class='tool_img2' src='../../images/tool3.png' mode="widthFix"/>
+        <text class='tool_text2'>往期活动</text>
+    </i-col>
+  </i-row>
+</view> -->
+

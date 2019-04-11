@@ -1,0 +1,15 @@
+<!--pages/integral_record/integral_record.wxml-->
+<view class='container'>
+  <view class='item' wx:for="{{arr}}" wx:key="index">
+    <view class='left'>
+      <view>{{item.title}}</view>
+      <view>{{item.time}}</view>
+    </view>
+    <view class="change {{item.change < 0 ? 'down' : ''}}">
+    {{item.change < 0 ? item.change : '+'+item.change}}
+    </view>
+  </view>
+  <view>
+    <load-more id='loadMoreView' bindloadMoreListener='loadMoreListener' bindclickLoadMore='clickLoadMore'></load-more>
+  </view>
+</view>

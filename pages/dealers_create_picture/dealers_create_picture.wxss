@@ -1,0 +1,64 @@
+/* pages/dealers_create_picture/dealers_create_picture.wxss */
+view{
+  box-sizing: border-box;
+}
+.container{
+  background: #F5F5F5;
+  border-top: 1px solid #F5F5F5;
+  min-height: 100vh;
+}
+.head{
+  width: 100vw;
+  padding: 5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item{
+  width: 210rpx;
+  height: 210rpx;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.on{
+  border: 1px solid #3AC984;
+}
+.item>image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.item>view{
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 20rpx;
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+.flex{
+  width: 100vw;
+  padding: 30rpx 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin: 15rpx 0;
+  font-size: 24rpx;
+}
+.right_icon{
+  width: 30rpx;
+}
+.right_icon:after{
+  content: "";
+  display: inline-block;
+    width: 18rpx;
+    height: 18rpx;
+    border-top: 1px solid #D4D4D4;
+    border-right: 1px solid #D4D4D4;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}

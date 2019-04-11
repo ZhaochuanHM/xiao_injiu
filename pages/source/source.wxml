@@ -1,0 +1,128 @@
+<!--pages/source/source.wxml-->
+<view class='content'>
+  <view class='head'>
+    <view class='time history_show'>2019-01-01 14:33</view>
+    <view class='search'>
+      <text>第</text>
+      <text class='num color_r'>2</text>
+      <text>次查询</text>
+    </view>
+  </view>
+  <view class='container'>
+    <view class='introduce'>
+      <view class='honorifics'>尊敬的顾客：</view>
+      <view class='recommend'>
+        您所查询的产品是四川省宜宾五粮液酒厂有限公司出品。您所查询的产品所属区域为四川省成都市，您所在的区域为四川省成 </view>
+      <!-- <view class='authenticity'>请放心购买，欢迎再次选购 </view> -->
+      <view class='authenticity color_r'>为保证您的权益，如产品出现多次查询或区域不符情况，请联系当地经销商。</view>
+    </view>
+  </view>
+  <view class='code'>
+    <view class='code_img'>
+      <image src="https://jsq-show.oss-cn-shenzhen.aliyuncs.com/in-wine/ercode.png"></image>
+      <text>89SAFDESG33J5</text>
+    </view>
+    <!-- <view class='coin'>20枚酒币已存入您的账户</view> -->
+    <view class='coin color_r'>请注意！该产品酒币已被领取若非本人操作， 请联系购买网点进行退换
+    </view>
+    <!-- <button class='use_coin'>立即使用</button> -->
+  </view>
+  <view class='title'>产品信息</view>
+  <view class='information'>
+    <image src='https://jsq-show.oss-cn-shenzhen.aliyuncs.com/in-wine/default-prize1.png' style='height : 360rpx;width:100%'></image>
+    <view>
+      <text>品牌：</text>
+      <text class='bold'>五粮春45度-500ml</text>
+    </view>
+    <view>等级：优级</view>
+    <view>储存方法：干燥、通风、阴凉和清洁处保存生产商名称：四川省宜宾五粮液集团有限公司</view>
+  </view>
+  <view class='title'>经销商信息</view>
+  <view class='information'>
+    <view>经销商名称：四川宏川酒业有限公司：</view>
+    <view>经销商地址：四川省成都市白家批发市场</view>
+    <view>
+      <text>经销商电话: </text>
+      <text class='color_b'>028-8111111</text>
+    </view>
+  </view>
+</view>
+<!--查无此码的html  -->
+<view class='content' style='display : none;'>
+  <view class='code'>
+    <view class='code_img'>
+      <image src="../../images/none_code.png"></image>
+    </view>
+    <view class='none_coin'>查无此码</view>
+    <view class='color_g'>请联系经销商</view>
+  </view>
+  <view class='title'>经销商信息</view>
+  <view class='information'>
+    <view>经销商名称：四川宏川酒业有限公司：</view>
+    <view>经销商地址：四川省成都市白家批发市场</view>
+    <view>
+      <text>经销商电话: </text>
+      <text class='color_b'>028-8111111</text>
+    </view>
+  </view>
+</view>
+
+<!--查询记录  -->
+<view class='history_content'>
+  <view class='time history_show'>2019-01-01 14:33</view>
+  <view class='bg'>
+  <view class='list_box'>
+  <view class='time_list bg_g'>
+      <text>2019-01-01 14:11</text>
+      <text>成都</text>
+    </view>
+    <view class='time_list bg_g'>
+      <text>2019-01-01 14:11</text>
+      <text>成都</text>
+    </view>
+    <view class='time_list bg_g'>
+      <text>2019-01-01 14:11</text>
+      <text>成都</text>
+    </view>
+    <view class='time_list bg_g'>
+      <text>2019-01-01 14:11</text>
+      <text>成都</text>
+    </view>
+    <view class='time_list bg_g'>
+      <text>2019-01-01 14:11</text>
+      <text>成都</text>
+    </view>
+    <view class='time_list bg_g'>
+      <text>2019-01-01 14:11</text>
+      <text>成都</text>
+    </view>
+    <view class='time_list bg_g'>
+      <text>2019-01-01 14:11</text>
+      <text>成都</text>
+    </view>
+    <view class='time_list bg_g'>
+      <text>2019-01-01 14:11</text>
+      <text>成都</text>
+    </view>
+    <view class='time_list bg_g'>
+      <text>2019-01-01 14:11</text>
+      <text>成都</text>
+    </view>
+    <view class='time_list bg_g'>
+      <text>2019-01-01 14:11</text>
+      <text>成都</text>
+    </view>
+  </view>
+
+  </view>
+</view>
+
+<!--奖励弹窗  -->
+<view wx:if="{{zoomOut}}" class='popup zoomOut' id='pop' bindtap='zoomOut'>
+  <view class='pop_box'>
+    <view class='pop_title'>扫码福利</view>
+    <image src="https://jsq-show.oss-cn-shenzhen.aliyuncs.com/in-wine/popup_coin%403x.png"></image>
+    <view class='reward'>恭喜您！获得20枚酒币</view>
+    <view class='reward_instr'>可用于平台奖励兑换等相关活动</view>
+  </view>
+</view>

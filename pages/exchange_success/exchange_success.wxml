@@ -1,0 +1,25 @@
+<!--pages/exchange_success/exchange_success.wxml-->
+<view class='container'>
+  <view class='success_img'>
+    <image src='/images/success_icon.png'></image>
+  </view>
+  <view class='color_red'>确认地址</view>
+  <!-- <view class='no_address'>
+   <text class='color_gray'>请完善收货地址信息，或在个人中心完善</text>
+  <button class='address_btn'>完善收货地址</button>
+  </view> -->
+  <view class='have_address'>
+    <text class='color_gray'>确认是否领取到该收货地址</text>
+    <view class='add_infor'>
+      <view class='user_infor'>
+        <text>{{address.consignee}}</text>
+        <text>{{address.mobile}}</text>
+      </view>
+      <view class='address'>{{address.province+address.city+address.district+address.address}}          </view>
+    </view>
+    <view class='check_btn'>
+      <button class='change' bindtap='changeAddress'>修改</button>
+      <button class='confirm' bindtap='confirmation'>确认</button>
+    </view>
+  </view>
+</view>

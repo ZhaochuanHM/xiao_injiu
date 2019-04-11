@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "IN酒-五粮春",
+  "usingComponents": {
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index",
+    "i-tabs": "../../dist/tabs/index",
+    "i-tab": "../../dist/tab/index",
+    "i-load-more": "../../dist/load-more/index",
+    "i-icon": "../../dist/icon/index",
+    "load-more": "../../component/load-more/load-more",
+    "load-more-two": "../../component/load-more-css/index"
+  }
+}

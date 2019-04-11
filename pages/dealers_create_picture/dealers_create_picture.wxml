@@ -1,0 +1,18 @@
+<!--pages/dealers_create_picture/dealers_create_picture.wxml-->
+<view class='container'>
+  <view class='head'>
+    <view class="item {{item.is_check ? 'on' : ''}}"
+    wx:for="{{imgArr}}"
+    wx:key="index"
+    catchtap='checkImg'
+    data-index="{{index}}"
+    >
+      <image src="{{item.img}}" class=""></image>
+      <view>默认图片</view>
+    </view>
+  </view>
+  <view class='flex' bindtap='chooseImage'>
+    <view>从手机相册选择</view>
+    <view class='right_icon'></view>
+  </view>
+</view>

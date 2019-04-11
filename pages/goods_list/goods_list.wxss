@@ -1,0 +1,144 @@
+/* pages/goods_list/goods_list.wxss */
+page{
+  background-color: #F5F5F5
+}
+.header{
+  width: 100%;
+  padding: 30rpx 30rpx;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.one_box{
+  background-color: #ffffff;
+  border-radius: 60rpx;
+  padding: 20rpx 35rpx;
+  box-sizing: border-box;
+}
+.icon{
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+}
+.merchant_info{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30rpx;
+  width: 400rpx;
+}
+.merchant_info1{
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.merchant_info2{
+  font-size: 25rpx;
+  color: #808080;
+}
+.more{
+  display: inline-block;
+  font-size: 30rpx;
+  color: #808080;
+  margin-left: 40rpx;
+}
+.shadow{
+  border-radius: 60rpx;
+  box-shadow: 0 0 20px rgba(230,230,230,1);
+}
+
+.line_box{
+  font-size: 30rpx;
+  margin: 15rpx 0;
+}
+.cut_off{
+  display: inline-block;
+  height: 1rpx;
+  width: 100%;
+  background-color: #EEEEEE;
+  margin: 10rpx 0;
+}
+.line_box_lable{
+  display: inline-block;
+  float: left;
+  color: #808080;
+}
+.line_box_lable1{
+  display: inline-block;
+  float: left;
+  color: #000000;
+  font-weight: 600;
+}
+.line_box_content{
+  display: inline-block;
+  float: right;
+  text-align: right;
+  width: 350rpx;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.body{
+  width: 100%;
+  padding: 30rpx 30rpx;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin-top: 30rpx;
+}
+.num{
+  color: #EA0F0F;
+}
+.code_li{
+  padding: 10rpx 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+.index{
+  background-color: #FFD630;
+  display: inline-block;
+  height: 40rpx;
+  line-height: 40rpx;
+  width: 40rpx;
+  text-align: center;
+  border-radius:50%; 
+  margin-right: 30rpx;
+  vertical-align: middle;
+}
+.goods_code{
+  vertical-align: middle;
+}
+.delete{
+  display: inline-block;
+  height: 50rpx;
+  width: 50rpx;
+  vertical-align: middle;
+  float: right;
+}
+.already{
+  float: right;
+  font-size: 35rpx;
+  color: #3AC984;
+  vertical-align: middle
+}
+.wait{
+  float: right;
+  font-size: 35rpx;
+  color: #808080;
+  vertical-align: middle
+}
+.footer{
+  width: 100%;
+  padding: 30rpx 30rpx;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+.submit{
+  margin: 0 auto;
+  background-color: #4429F2;
+  width: 300rpx;
+  color: #ffffff;
+  padding: 20rpx 30rpx;
+  border-radius: 50rpx;
+}

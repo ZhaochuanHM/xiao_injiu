@@ -1,0 +1,11 @@
+<!--pages/my_message/my_message.wxml-->
+<view class='container'>
+  <view class='list' wx:for="{{[0,1]}}">
+    <view class="title {{isRead ? 'un_read' : ''}}">
+      <icon class='icon'></icon>
+      <text>标题一</text>
+    </view>
+    <view class='content'>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字...</view>
+  </view>
+</view>

@@ -1,0 +1,49 @@
+<!--pages/seckill/seckill.wxml-->
+<view class='seckill_box'>
+  <view class='seckill_header'>
+    <image class='seckill_header_img' src='{{dataList.prize_theme}}' mode="widthFix"/>
+  </view>
+  <view class='seckill_info'>
+    <text class='seckill_info_title'>{{dataList.prize_name}}</text>
+    <view class='seckill_info_price'>
+     <text class='seckill_info_price1'>{{dataList.now_price}}酒币</text>
+     <text class='seckill_info_price2'>{{dataList.prize_price}}酒币</text>
+    </view>
+    <text class='seckill_people'>{{dataList.join_num}}人正在抢购，只剩{{dataList.prize_remaining}}个啦！</text>
+  </view>
+  <!-- 活动主办方 -->
+  <view class='sponsor clearfix'>
+    <view class='sponsor_text1'>赞助商</view>
+    <view class='sponsor_text2'>{{dataList.agency_name}}</view>
+  </view>
+
+  <view class='footer'>
+    <!-- 奖品介绍 -->
+    <view class='footer_title'>
+      <view class='line'></view>
+      <text class='footer_title_text'>产品介绍</text>
+    </view>
+    <view class='introduce'>
+      <text class='introduce_text'>{{dataList.prize_brief}}</text>
+    </view>
+
+    <!-- 奖品介绍 -->
+    <view class='footer_title'>
+      <view class='line'></view>
+      <text class='footer_title_text'>规则</text>
+    </view>
+    <view class='introduce'>
+      <text class='rule_text'>{{dataList.wa_brief}}</text>
+    </view>
+
+    <!-- 分享 -->
+    <view class='rush_to_buy_box'>
+      <view class='rush_to_buy_btn1' wx:if="{{dataList.prize_status == 1}}" bindtap='secBuy'>立即抢购</view>
+      <view class='rush_to_buy_btn1' wx:if="{{dataList.prize_status == 1}}" bindtap='secKill'>砍价</view>
+      <view class='rush_to_buy_btn1' wx:if="{{dataList.prize_status == 2}}" bindtap='secBuy'>立即抢购</view>
+      <view class='rush_to_buy_btn2' wx:if="{{dataList.prize_status == 2}}">找人帮砍</view>
+      <view class='rush_to_buy_btn1' wx:if="{{dataList.prize_status == 3}}" bindtap='secBuy'>立即抢购</view>
+      <view class='rush_to_buy_btn3' wx:if="{{dataList.prize_status == 4}}">已抢光</view>
+    </view>
+  </view>
+</view>

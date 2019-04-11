@@ -1,0 +1,86 @@
+<!--pages/lottery_draw_name_list/lottery_draw_name_list.wxml-->
+<!-- 获奖名单 -->
+  <view class='lottery'>
+    <view class='lottery_box'>
+      <!-- 获奖名单 -->
+      <scroll-view scroll-y='ture' style="height: 600px;text-align:center;">
+        <view class='box'>
+          <text class='frist_people_title'>奖品一：五粮精品96 x 1</text>
+        <!-- 列表数据循环 -->
+          <view class='frist_people_list'>
+            <image class='frist_people_list_img' src='../../images/people_photo.jpg'/>
+            <text class='frist_people_list_text'>王大锤</text>
+          </view>
+
+          <view class='frist_people_list'>
+            <image class='frist_people_list_img' src='../../images/people_photo.jpg'/>
+            <text class='frist_people_list_text'>王大锤</text>
+          </view> 
+
+          <view class='frist_people_list'>
+            <image class='frist_people_list_img' src='../../images/people_photo.jpg'/>
+            <text class='frist_people_list_text'>王大锤</text>
+          </view>  
+
+          <view class='frist_people_list'>
+            <image class='frist_people_list_img' src='../../images/people_photo.jpg'/>
+            <text class='frist_people_list_text'>王大锤</text>
+          </view>
+
+          <text class='more'>查看更多...</text>
+        </view>
+
+        <view class='box'>
+          <text class='frist_people_title'>奖品二：五粮50度 x 100</text>
+        <!-- 列表数据循环 -->
+          <view class='frist_people_list'>
+            <image class='frist_people_list_img' src='../../images/people_photo.jpg'/>
+            <text class='frist_people_list_text'>李二牛</text>
+          </view>
+
+          <view class='frist_people_list'>
+            <image class='frist_people_list_img' src='../../images/people_photo.jpg'/>
+            <text class='frist_people_list_text'>李二牛</text>
+          </view> 
+
+          <view class='frist_people_list'>
+            <image class='frist_people_list_img' src='../../images/people_photo.jpg'/>
+            <text class='frist_people_list_text'>李二牛</text>
+          </view>  
+
+          <view class='frist_people_list'>
+            <image class='frist_people_list_img' src='../../images/people_photo.jpg'/>
+            <text class='frist_people_list_text'>李二牛</text>
+          </view>
+
+          <text class='more'>查看更多...</text>
+        </view>
+
+        <view class='box'>
+          <text class='frist_people_title'>奖品三：五粮春45度 x 300</text>
+        <!-- 列表数据循环 -->
+          <view class='frist_people_list'>
+            <image class='frist_people_list_img' src='../../images/people_photo.jpg'/>
+            <text class='frist_people_list_text'>赵老二</text>
+          </view>
+
+          <view class='frist_people_list'>
+            <image class='frist_people_list_img' src='../../images/people_photo.jpg'/>
+            <text class='frist_people_list_text'>赵老二</text>
+          </view> 
+
+          <view class='frist_people_list'>
+            <image class='frist_people_list_img' src='../../images/people_photo.jpg'/>
+            <text class='frist_people_list_text'>赵老二</text>
+          </view>  
+
+          <view class='frist_people_list'>
+            <image class='frist_people_list_img' src='../../images/people_photo.jpg'/>
+            <text class='frist_people_list_text'>赵老二</text>
+          </view>
+
+          <text class='more'>查看更多...</text>
+        </view>
+      </scroll-view>
+    </view>
+  </view>

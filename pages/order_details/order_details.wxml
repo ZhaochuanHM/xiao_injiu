@@ -1,0 +1,151 @@
+<!--pages/order_details/order_details.wxml-->
+<view class='container'>
+<!-- 头部时间轴 -->
+  <view class='head'>
+    <view class='step_box'>
+      <view class='merchant_box'>
+        <image class='merchant_box_img' src='../../images/order_details_icon_delivery@3x.png' mode="widthFix"/>
+        <view class='merchant_box_info'>
+          <view class='merchant_box_info_one'>红旗连锁</view>
+          <view class='merchant_box_info_two'>四川省成都市高新区世纪城假日酒店2F水晶厅</view>
+        </view>
+        <image class='merchant_box_tel' src='../../images/order_details_icon_call@3x.png' mode="widthFix"/>
+      </view>
+      <view class='step1'>
+        <image class='step' src='../../images/order_progressbar_1@3x.png' mode="widthFix"/>
+        <image class='line' src='../../images/order_progressbar_2@3x.png' mode="widthFix"/>
+      </view>
+      <view class='step2'>
+        <image class='step' src='../../images/order_progressbar_3@3x.png' mode="widthFix"/>
+        <image class='line' src='../../images/order_progressbar_4@3x.png' mode="widthFix"/>
+      </view>
+      <view class='step3'>
+        <image class='step' src='../../images/order_progressbar_5@3x.png' mode="widthFix"/>
+        <image class='line' src='../../images/order_progressbar_4@3x.png' mode="widthFix"/>
+      </view>
+      <view class='step4'>
+        <image class='step' src='../../images/order_progressbar_5@3x.png' mode="widthFix"/>
+        <image class='line' src='../../images/order_progressbar_4@3x.png' mode="widthFix"/>
+      </view>
+      <view class='step5'>
+        <image class='step' src='../../images/order_progressbar_5@3x.png' mode="widthFix"/>
+      </view>
+
+      <view class='text_box'>
+        <view class='text green'>完善信息</view>
+        <view class='text {{text2}}'>待审核</view>
+        <view class='text {{text3}}'>待配货</view>
+        <view class='text {{text4}}'>待收货</view>
+        <view class='text {{text5}}'>已收货</view>
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 用酒详情 -->
+  <view class='body'>
+    <view class='check_code_box'>
+      <view class='check_code_box_text1'>收货码：PK1856</view>
+      <view class='check_code_box_text2'>货品送到后请将收货码告知配送人</view>
+    </view>
+    <view class='line_box clearfix'>
+      <view class='line_box_lable'>订单编号:</view>
+      <view class='line_box_content'>FSDF41514564</view>
+    </view>
+    <view class='line_box clearfix'>
+      <view class='line_box_lable'>下单时间:</view>
+      <view class='line_box_content'>2018-12-20 14:00</view>
+    </view>
+
+    <view class='cut_off'></view>
+
+    <view class='line_box clearfix'>
+      <view class='line_box_lable'>用酒地址:</view>
+      <view class='line_box_content'>四川省成都市高新区世纪城假日酒店2F水晶厅</view>
+    </view>
+    <view class='line_box clearfix'>
+      <view class='line_box_lable'>酒店电话:</view>
+      <view class='line_box_content blue'>028-8666 8666</view>
+    </view>
+
+    <view class='cut_off'></view>
+
+    <view class='line_box clearfix'>
+      <view class='line_box_lable'>宴席类型:</view>
+      <view class='line_box_content'>婚宴<text class='blue'>查看</text></view>
+    </view>
+    <view class='line_box clearfix'>
+      <view class='line_box_lable'>宴席桌数:</view>
+      <view class='line_box_content'>50桌</view>
+    </view>
+    <view class='line_box clearfix'>
+      <view class='line_box_lable'>用酒情况:</view>
+      <view class='line_box_content'><text>五粮醇3D x 10箱</text><text class='small'>(1箱/6瓶)</text></view>
+    </view>
+    <view class='line_box clearfix'>
+      <view class='line_box_lable'>客户信息:</view>
+      <view class='line_box_content'><text>王大锤</text> <text class='tel'>13888888888</text></view>
+    </view>
+
+    <view class='cut_off'></view>
+
+    <view class='line_box clearfix'>
+      <view class='line_box_lable'>收货地址:</view>
+      <view class='line_box_content_address'></view>
+    </view>
+
+    <view class='address1'>
+      <view class='merchant_name'>某某商户</view>
+      <view class='hr0'></view>
+      <view><text class='user_name'>王思聪</text><text class='user_tel'>13555555555</text></view>
+      <view class='user_address'>四川省 成都市 武侯区 益州大道中段1999号阿里巴巴10F</view>
+    </view>
+
+
+    <view class='address1'>
+      <view class='user'><text class='user_name'>王思聪</text><text class='user_tel'>13555555555</text></view>
+      <view class='user_address'>四川省 成都市 武侯区 益州大道中段1999号阿里巴巴10F</view>
+    </view>
+
+    <view class='cut_off'></view>
+
+    <view class='line_box clearfix'>
+      <view class='line_box_lable'>赠品信息:</view>
+      <view class='line_box_content'>
+        <view>椰汁500ml  x  24瓶</view>
+        <view>椰汁500ml  x  24瓶</view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='footer'>
+    <view class='btn_box'>
+      <view class='btn error'>不通过</view>
+      <view class='btn success'>通过</view>
+    </view>
+
+
+    <!-- <view class='btn_box1'>
+      <view class='list'>
+        <image class='list_icon' src='../../images/order_details_icon_goodslist@3x.png' mode="widthFix"/>
+        <view class='list_text'>货品清单</view>
+      </view>
+      <view class='submit'>扫码出库</view>
+      <view class='code'>填写收货码，完成配送</view>
+      <view class='end'>扫码出库</view>
+    </view> -->
+  </view>
+</view>
+
+
+<!-- 拒绝理由弹窗 -->
+<!-- <i-modal visible="{{ visible1 }}" title="填写原因" bind:ok="handleClose1" bind:cancel="handleClose1">
+    <textarea placeholder="请填写拒绝原因" auto-focus />
+</i-modal> -->
+
+
+<!-- 填写核奖码弹窗 -->
+<!-- <i-modal visible="{{ visible2 }}" title="填写收货码" bind:ok="handleClose2" bind:cancel="handleClose2">
+    <input placeholder="请填写收获码" auto-focus maxlength='6'/>
+</i-modal> -->

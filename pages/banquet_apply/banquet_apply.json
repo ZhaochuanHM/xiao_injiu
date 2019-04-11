@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "宴席用酒申请",
+  "usingComponents": {
+    "i-notice-bar": "../../dist/notice-bar/index"
+  }
+}

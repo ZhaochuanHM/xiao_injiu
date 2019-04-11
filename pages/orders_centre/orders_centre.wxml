@@ -1,0 +1,243 @@
+<!--pages/orders_centre/orders_centre.wxml-->
+<!-- 订单中心 -->
+<view class='container'>
+  <view class='head'>
+    <view class="{{!isEnd ? 'border_bottom' : ''}}" bindtap='going'>进行中</view>
+    <view class="{{!isEnd ? '' : 'border_bottom' }}" bindtap='completed'>已完成</view>
+  </view>
+  <scroll-view scroll-y style="height: calc(100vh - 90rpx)" class='content'>
+    <view class='item'>
+      <view class='title'>
+        <view class='left'>
+          <text>订单编号：FSDF41514564</text>
+          <!--  商户-->
+          <text class='role'>商户</text>
+          <!--  个人-->
+          <!-- <text class='role'>个人</text> -->
+          <!--  经销商-->
+          <!-- <text class='role'>经销商</text> -->
+        </view>
+        <!-- 待完善 -->
+        <view class='right color1'>待完善</view>
+        <!-- 待审核 -->
+        <!-- <view class='right color2'>待审核</view> -->
+        <!-- 待配货 -->
+        <!-- <view class='right color3'>待配货</view> -->
+        <!-- 待收货 -->
+        <!-- <view class='right color4'>待收货</view> -->
+        <!-- 订单完成 -->
+        <!-- <view class='right color5'>订单完成</view> -->
+        <!-- 审核不通过 -->
+        <!-- <view class='right color6' bindtap='nopassSource'>审核不通过 <image class='no_pass' src='/images/my/activity_notyet_icon_refuse.png'></image></view> -->
+      </view>
+      <view class='info'>
+        <image class='goods_img' src='/images/picture1.png'></image>
+        <view class='center'>
+          <view>五粮醇3DX10箱
+            <text class='unit'>(1箱/6瓶)</text>
+          </view>
+          <view>客户姓名：谭晓生</view>
+          <view>用酒时间：2019-01-01 14:00</view>
+        </view>
+        <image class='phone_img' src='/images/backstage_order_icon_call.png'></image>
+      </view>
+      <view class='handle'>
+        <!-- 待完善 -->
+        <view class='completion_btn'>邀请客户完善信息</view>
+        <!-- 待审核 -->
+        <!-- <view class='audit_btn'>
+          <view bindtap='reject'>不通过</view>
+          <view bindtap='pass'>通过</view>
+        </view> -->
+        <!-- 待配货 -->
+        <!-- <view class='out_btn'>扫码出库</view> -->
+        <!-- 待配货 -->
+        <!-- <view class='out_btn'>扫码入库</view> -->
+        <!-- 待收货 -->
+        <!-- <view class='accept_btn'  bindtap='cashPrize'>填写收货码</view> -->
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='title'>
+        <view class='left'>
+          <text>订单编号：FSDF41514564</text>
+          <!--  商户-->
+          <text class='role'>个人</text>
+        </view>
+        <!-- 待审核 -->
+        <view class='right color2'>待审核</view>
+      </view>
+      <view class='info'>
+        <image class='goods_img' src='/images/picture1.png'></image>
+        <view class='center'>
+          <view>五粮醇3DX10箱
+            <text class='unit'>(1箱/6瓶)</text>
+          </view>
+          <view>客户姓名：谭晓生</view>
+          <view>用酒时间：2019-01-01 14:00</view>
+        </view>
+        <image class='phone_img' src='/images/backstage_order_icon_call.png'></image>
+      </view>
+      <view class='handle'>
+        <!-- 待审核 -->
+        <view class='audit_btn'>
+          <view bindtap='reject'>不通过</view>
+          <view bindtap='pass'>通过</view>
+        </view>
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='title'>
+        <view class='left'>
+          <text>订单编号：FSDF41514564</text>
+          <!--  经销商-->
+          <text class='role'>经销商</text>
+        </view>
+        <!-- 待配货 -->
+        <view class='right color3'>待配货</view>
+      </view>
+      <view class='info'>
+        <image class='goods_img' src='/images/picture1.png'></image>
+        <view class='center'>
+          <view>五粮醇3DX10箱
+            <text class='unit'>(1箱/6瓶)</text>
+          </view>
+          <view>客户姓名：谭晓生</view>
+          <view>用酒时间：2019-01-01 14:00</view>
+        </view>
+        <image class='phone_img' src='/images/backstage_order_icon_call.png'></image>
+      </view>
+      <view class='handle'>
+        <!-- 待配货 -->
+        <view class='out_btn'>扫码出库</view>
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='title'>
+        <view class='left'>
+          <text>订单编号：FSDF41514564</text>
+          <!--  个人-->
+          <text class='role'>个人</text>
+        </view>
+        <!-- 待收货 -->
+        <view class='right color4'>待收货</view>
+      </view>
+      <view class='info'>
+        <image class='goods_img' src='/images/picture1.png'></image>
+        <view class='center'>
+          <view>五粮醇3DX10箱
+            <text class='unit'>(1箱/6瓶)</text>
+          </view>
+          <view>客户姓名：谭晓生</view>
+          <view>用酒时间：2019-01-01 14:00</view>
+        </view>
+        <image class='phone_img' src='/images/backstage_order_icon_call.png'></image>
+      </view>
+      <view class='handle'>
+        <!-- 待完善 -->
+        <!-- <view class='completion_btn'>邀请客户完善信息</view> -->
+        <!-- 待审核 -->
+        <!-- <view class='audit_btn'>
+          <view>不通过</view>
+          <view>通过</view>
+        </view> -->
+        <!-- 待配货 -->
+        <!-- <view class='out_btn'>扫码出库</view> -->
+        <!-- 待配货 -->
+        <!-- <view class='out_btn'>扫码入库</view> -->
+        <!-- 待收货 -->
+        <view class='accept_btn' bindtap='cashPrize'>填写收货码</view>
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='title'>
+        <view class='left'>
+          <text>订单编号：FSDF41514564</text>
+          <!--  商户-->
+          <text class='role'>商户</text>
+        </view>
+        <!-- 订单完成 -->
+        <view class='right color5'>订单完成</view>
+      </view>
+      <view class='info'>
+        <image class='goods_img' src='/images/picture1.png'></image>
+        <view class='center'>
+          <view>五粮醇3DX10箱
+            <text class='unit'>(1箱/6瓶)</text>
+          </view>
+          <view>客户姓名：谭晓生</view>
+          <view>用酒时间：2019-01-01 14:00</view>
+        </view>
+        <image class='phone_img' src='/images/backstage_order_icon_call.png'></image>
+      </view>
+      <view class='handle'>
+        <!-- 待完善 -->
+        <!-- <view class='completion_btn'>邀请客户完善信息</view> -->
+        <!-- 待审核 -->
+        <!-- <view class='audit_btn'>
+          <view>不通过</view>
+          <view>通过</view>
+        </view> -->
+        <!-- 待配货 -->
+        <!-- <view class='out_btn'>扫码出库</view> -->
+        <!-- 待配货 -->
+        <!-- <view class='out_btn'>扫码入库</view> -->
+        <!-- 待收货 -->
+        <!-- <view class='accept_btn'>填写收货码</view> -->
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='title'>
+        <view class='left'>
+          <text>订单编号：FSDF41514564</text>
+          <!--  商户-->
+          <text class='role'>商户</text>
+        </view>
+        <!-- 审核不通过 -->
+        <view class='right color6' bindtap='nopassSource'>审核不通过
+          <image class='no_pass' src='/images/my/activity_notyet_icon_refuse.png'></image>
+        </view>
+      </view>
+      <view class='info'>
+        <image class='goods_img' src='/images/picture1.png'></image>
+        <view class='center'>
+          <view>五粮醇3DX10箱
+            <text class='unit'>(1箱/6瓶)</text>
+          </view>
+          <view>客户姓名：谭晓生</view>
+          <view>用酒时间：2019-01-01 14:00</view>
+        </view>
+        <image class='phone_img' src='/images/backstage_order_icon_call.png'></image>
+      </view>
+      <view class='handle'>
+        <!-- 待完善 -->
+        <!-- <view class='completion_btn'>邀请客户完善信息</view> -->
+        <!-- 待审核 -->
+        <!-- <view class='audit_btn'>
+          <view>不通过</view>
+          <view>通过</view>
+        </view> -->
+        <!-- 待配货 -->
+        <!-- <view class='out_btn'>扫码出库</view> -->
+        <!-- 待配货 -->
+        <!-- <view class='out_btn'>扫码入库</view> -->
+        <!-- 待收货 -->
+        <!-- <view class='accept_btn'>填写收货码</view> -->
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<!-- 不通过 -->
+<modal hidden="{{hiddenmodalput}}" title="原因" confirm-text="提交" cancel-text="取消" bindcancel="cancelM" bindconfirm="confirmM">
+  <textarea bindinput='reason' type='text' placeholder="请填写驳回原因..." focus="{{autofocus}}"></textarea>
+</modal>
+<!--  兑奖-->
+<modal hidden="{{hiddenmodal}}" title="填写收货码" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+  <input class='code' bindinput='codeInput' type='text' focus="{{focus}}" />
+  <view>收货码不正确，请于客户联系进行核对</view>
+</modal>

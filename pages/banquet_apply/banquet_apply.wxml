@@ -1,0 +1,61 @@
+<!--pages/banquet_apply/banquet_apply.wxml-->
+<!-- 宴席用酒申请 -->
+<view class='container'>
+  <i-notice-bar icon="systemprompt" loop speed="1000">
+    请核对相关信息，若信息不相符，请修改
+  </i-notice-bar>
+  <view class='content'>
+    <view class='item'>
+      <view class='title'>用酒日期</view>
+      <picker mode="date" value="{{date}}" start="{{date}}" end="" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+     <view class='item'>
+      <view class='title'>用酒时间</view>
+      <picker mode="time" value="{{time}}" start="09:00" end="21:00" bindchange="bindTimeChange">
+        <view class="picker">
+          {{time}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='item'>
+      <view class='title'>用酒地点</view>
+      <view class='area' bindtap='areaChoose'>{{area}}</view>
+    </view>
+    <view class='item'>
+      <view class='title'></view>
+       <textarea placeholder='详细地址'></textarea>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='item'>
+      <view class='title'>用酒名称</view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            {{array[index]}}
+          </view>
+        </picker>
+    </view>
+    <view class='item'>
+      <view class='title'>用酒数量</view>
+      <input placeholder='请输入' type='number'></input>
+      <view class='wd50'>箱<text class='unit'>(1箱/6瓶)</text></view>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='item'>
+      <view class='title'>客户姓名</view>
+      <input placeholder='姓名'></input>
+    </view>
+    <view class='item'>
+      <view class='title'>联系电话</view>
+      <input placeholder='电话' type='tel'></input>
+    </view>
+  </view>
+  <button class='submit'>确定</button>
+</view>

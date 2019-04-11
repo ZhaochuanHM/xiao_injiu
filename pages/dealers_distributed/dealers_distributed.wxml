@@ -1,0 +1,125 @@
+<!--pages/dealers_distributed/dealers_distributed.wxml-->
+<import src="/pages/dealers_template/dealers_template.wxml"/>
+<!-- 奖品派发 -->
+<view class='container'>
+  <i-notice-bar icon="systemprompt" loop>请于15个工作日完成派奖，否则将扣除相应保证金。</i-notice-bar>
+  <view class='tabar'>
+    <view bindtap='changeTab' class="{{switch_btn == 0 ? 'red' : ''}}" data-index="0">待发奖</view>
+    <view bindtap='changeTab' class="{{switch_btn == 1 ? 'red' : ''}}" data-index="1">已派发</view>
+  </view>
+
+
+<!-- 待发奖 -->
+  <view class="free_box {{switch_btn == 0 ? 'show' : ''}}" data-index="0">
+
+      <view class='item' wx:for='{{waitList}}'>
+        <view class='title'>
+          <view>{{item.type}}</view>
+          <view>{{item.time}}</view>
+        </view>
+        <view class='bg_gray'>
+          <image class='hr' src='/images/giftgrant_list_bg.png'></image>
+          <view class='dashed'></view>
+        </view>
+        <view class="goods_box">
+          <image src='{{item.img}}'></image>
+          <view class='goods_title'>
+            <view>{{item.gift}}</view>
+            <view class='color_r'>{{item.price}}</view>
+            <view>{{item.overdue}}</view>
+          </view>
+        </view>
+        <view class="add_box">
+          <view class='add_title' catchtap='sildeChange' data-index="{{index}}">
+            <view>发放操作</view>
+            <view class="{{item.isTop ? 'top' : 'bottom'}}"></view>
+          </view>
+          <view wx:if="{{item.isTop}}">
+            <view class='address' wx:if="{{item.coin1}}">
+              <view class='user_info'>
+                <view>{{item.people_name}}</view>
+                <view>{{item.people_tel}}</view>
+              </view>
+              <view class='address_info'>
+                {{item.people_address}}
+              </view>
+            </view>
+
+            <!-- 未填写地址 -->
+            <view class='address1' wx:if="{{item.coin4}}">
+              用户尚未完善收货地址
+            </view>
+
+            <view class='redemption' wx:if="{{item.coin5}}">
+              <view data-tel='{{item.people_tel}}' bindtap='on_tel'>电话联系</view>
+              <view wx:if="{{item.coin2}}" bindtap='open' data-wbid='{{item.wb_id}}' data-index='{{index}}'>填写核奖码</view>
+              <view wx:if="{{item.coin3}}">确认发放</view>
+            </view>
+          </view>
+        </view>
+      </view>  
+
+  <!-- <view>
+    <load-more id='loadMoreView1' bindloadMoreListener='loadMoreListener' bindclickLoadMore='clickLoadMore'></load-more>
+  </view> -->
+
+  </view>
+
+
+
+ <!-- 已派发 -->
+  <view class="free_box {{switch_btn == 1 ? 'show' : ''}}" data-index="1">
+
+      <view class='item' wx:for='{{alreadyList}}'>
+        <view class='title'>
+          <view>{{item.type}}</view>
+          <view>{{item.time}}</view>
+        </view>
+        <view class='bg_gray'>
+          <image class='hr' src='/images/giftgrant_list_bg.png'></image>
+          <view class='dashed'></view>
+        </view>
+        <view class="goods_box list2">
+          <image src='{{item.img}}'></image>
+          <view class='goods_title'>
+            <view>{{item.gift}}</view>
+            <view class='color_r'>{{item.price}}</view>
+            <view>{{item.overdue}}</view>
+          </view>
+        </view>
+      </view> 
+
+    <!-- <view>
+      <load-more id='loadMoreView2' bindloadMoreListener='loadMoreListener' bindclickLoadMore='clickLoadMore'></load-more>
+    </view> -->
+    
+  </view>
+    <view>
+      <load-more id='loadMoreView' bindloadMoreListener='loadMoreListener' bindclickLoadMore='clickLoadMore'></load-more>
+    </view>
+
+
+
+  <!-- 核奖码窗口 -->
+    <view class='toast-box' hidden='{{dialog}}'>
+        <view class='toastbg'></view>
+        <view class='showToast'>
+            <view class='toast-title'>
+                <text>填写核奖码</text>
+            </view>
+            <view class='toast-main'>
+                <view class='toast-input'>
+                    <input placeholder='请输入填写核奖码' maxlength='6' bindinput='check_code' value='{{checkCode}}'></input>
+                </view>
+            </view>
+            <view class='toast-button'>
+                <view class='button1' bindtap='close'>取消</view>
+                <view class='button2' bindtap='submit'>确定</view>
+            </view>
+        </view>
+    </view>
+
+
+  
+
+</view>

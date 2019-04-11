@@ -1,0 +1,59 @@
+<!--pages/my_lucky/my_lucky.wxml-->
+<view class='container'>
+  <view class='tabar'>
+    <view bindtap='changeTab' class="{{index == 0 ? 'red' : ''}}" data-index="0">免费抽奖</view>
+    <!-- <view bindtap='changeTab' class="{{index == 1 ? 'red' : ''}}" data-index="1">活动抽奖</view> -->
+    <view bindtap='changeTab' class="{{index == 2 ? 'red' : ''}}" data-index="2">中奖纪录</view>
+  </view>
+  <view class="free_box {{index == 0 ? 'show' : ''}}" data-index="0">
+    <view class='waiting'>
+      <view class='item' wx:for="{{listDraw}}" wx:key="index" data-id='{{item.wa_id}}' data-index='{{index}}' bindtap='mylottery1'>
+        <view class='active'>
+          <image src='{{item.prize_theme[0]}}'></image>
+          <view>{{item.agency_name}} 赞助</view>
+        </view>
+        <view class='introduce'>
+          <view class='goods_name'>活动：{{item.wa_name}}</view>
+          <view wx:if='{{item.opening_status == 1}}'>已开奖</view>
+          <view wx:if='{{item.opening_status == 0}}'>{{item.opening_condition == 1 ? '参与人数达到'+item.opening_people_num+'自动开奖' : item.opening_time+'自动开奖'}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- <view class='already'>
+      <view class='end_item' wx:for="{{[0,1]}}" wx:key="index">
+        <view class='end_goods'>奖品：五粮春精品96</view>
+        <view class='time'>1月7日</view>
+      </view>
+    </view> -->
+  </view>
+  <!-- <view class="free_box {{index == 1 ? 'show' : ''}}" data-index="1">
+    <view class='activity_item' wx:for="{{[0,1]}}" wx:key="index">
+      <image src='https://jsq-show.oss-cn-shenzhen.aliyuncs.com/in-wine/home_activity_banner1%403x.png'></image>
+      <view class='activity_introduce'>
+        <view class='goods_name'>五粮春感恩回馈，瓶瓶有大奖，出国游等你拿</view>
+        <view>活动时间：2019.01.01 - 2019.02.01</view>
+      </view>
+    </view>
+  </view> -->
+  <view class="winning_record {{index == 2 ? 'show' : ''}}" data-index="2">
+    <view class='record_item' wx:for="{{listDrawWinning}}" wx:key="index" data-id='{{item.wa_id}}' data-index='{{index}}' bindtap='mylottery1'>
+      <view class='record_title'>
+        <view>{{item.type}}</view>
+        <view>{{item.time}}</view>
+      </view>
+      <view class='record_content'>
+        <image src='{{item.img}}'></image>
+        <view class='record_detail'>
+          <view class='goods_name'>{{item.goods}}</view>
+          <view class='code' catchtap  ='copyText' data-code='{{item.checkcode}}'>{{item.checkcode}}</view>
+          <view>当您收到奖品后，请将核奖码告知客服！</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <load-more id='loadMoreView' bindloadMoreListener='loadMoreListener' bindclickLoadMore='clickLoadMore'></load-more>
+  </view>
+</view>
+

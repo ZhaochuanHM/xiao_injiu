@@ -1,0 +1,24 @@
+/* pages/participation_lottery/participation_lottery.wxss */
+.people_list_title{
+  text-align: center;
+  color: #808080;
+  font-size: 30rpx;
+}
+.people_list_img_box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  padding: 0 5vw;
+}
+.people_list_img{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 5rpx;
+}
+.more{
+  margin-top: 20rpx;
+  text-align: center;
+  color: #4429F2;
+  font-size: 25rpx;
+}

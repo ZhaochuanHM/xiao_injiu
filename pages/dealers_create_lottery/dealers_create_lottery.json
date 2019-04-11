@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "发起活动",
+  "usingComponents": {
+    "i-action-sheet": "../../dist/action-sheet/index",
+    "i-toast": "../../dist/toast/index"
+  }
+}

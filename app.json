@@ -1,0 +1,97 @@
+{
+  "pages": [
+    "pages/goods_list/goods_list",
+    "pages/add_merchant/add_merchant",
+    "pages/merchant_list/merchant_list",
+    "pages/place_order/place_order",
+    "pages/banquet_apply/banquet_apply",
+    "pages/orders_centre/orders_centre",
+    "pages/order_details/order_details",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/share/share",
+    "pages/dealer_tools/dealer_tools",
+    "pages/dealers_distributed/dealers_distributed",
+    "pages/integral_record/integral_record",
+    "pages/address_list/address_list",
+    "pages/address_edit/address_edit",
+    "pages/address_add/address_add",
+    "pages/nearby/nearby",
+    "pages/my_lucky/my_lucky",
+    "pages/my_coin/my_coin",
+    "pages/exchange/exchange",
+    "pages/exchange_detail/exchange_detail",
+    "pages/exchange_success/exchange_success",
+    "pages/dealers_create_picture/dealers_create_picture",
+    "pages/source/source",
+    "pages/dealers_activity/dealers_activity",
+    "pages/dealers_create_seckill/dealers_create_seckill",
+    "pages/dealers_create_bargaining/dealers_create_bargaining",
+    "pages/dealers_create_lottery/dealers_create_lottery",
+    "pages/dealers_past_activities/dealers_past_activities",
+    "pages/dealers_uninitiated_activity/dealers_uninitiated_activity",
+    "pages/dealers_template/dealers_template",
+    "pages/my_change_phone2/my_change_phone2",
+    "pages/my_change_phone1/my_change_phone1",
+    "pages/my_set/my_set",
+    "pages/my_exchange/my_exchange",
+    "pages/coin_record/coin_record",
+    "pages/my_message/my_message",
+    "pages/my_meskill/my_meskill",
+    "pages/my_snap_up/my_snap_up",
+    "pages/rate_of_progress2/rate_of_progress2",
+    "pages/sec_kill/sec_kill",
+    "pages/rush_to_buy/rush_to_buy",
+    "pages/rush_to_buy_people/rush_to_buy_people",
+    "pages/nearby_merchant_info/nearby_merchant_info",
+    "pages/lottery_draw/lottery_draw",
+    "pages/rate_of_progress1/rate_of_progress1",
+    "pages/payment/payment",
+    "pages/lottery_draw_name_list/lottery_draw_name_list",
+    "pages/welfare/welfare",
+    "pages/participation_lottery/participation_lottery",
+    "pages/login/login",
+    "pages/games/games"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "IN酒",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color" : "#727272",
+    "selectedColor": "#FF1A1A",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/icon_tag_home_nor@3x.png",
+        "selectedIconPath": "/images/icon_tag_home_pre@3x.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/nearby/nearby",
+        "iconPath": "/images/icon_tag_nearby_nor@3x.png",
+        "selectedIconPath": "/images/icon_tag_nearby_pre@3x.png",
+        "text": "附近"
+      },
+      {
+        "pagePath": "pages/welfare/welfare",
+        "iconPath": "/images/icon_tag_welfare_nor@3x.png",
+        "selectedIconPath": "/images/icon_tag_welfare_pre@3x.png",
+        "text": "福利"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "/images/icon_tag_personal_nor@3x.png",
+        "selectedIconPath": "/images/icon_tag_personal_pre@3x.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

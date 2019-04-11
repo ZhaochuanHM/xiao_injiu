@@ -1,0 +1,61 @@
+<!--pages/rush_to_buy_people/rush_to_buy_people.wxml-->
+<view class='header'>
+  <view class='goods_item1'>
+    <image src="{{dataList.prize_theme}}" class="goods_img" />
+  </view>
+  <view class='goods_item2'>
+    <text class='goods_title'>{{dataList.prize_name}}</text>
+    <view class='good_state'>
+      <view class='good_state1'>
+        <image class='state1_img' src='../../images/state1.png' />
+        <text class='state1_text'>{{dataList.view_num}}</text>
+      </view>
+      <view class='good_state2'>
+        <image class='state2_img' src='../../images/state2.png' />
+        <text class='state2_text'>{{dataList.join_num}}</text>
+      </view>
+    </view>
+    <view class='goods_price'>
+      <text class='peice1'>{{dataList.now_price}}酒币</text>
+      <text class='peice2'>{{dataList.prize_price}}酒币</text>
+    </view>
+  </view>
+</view>
+
+
+<!-- 活动主办方 -->
+<view class='sponsor clearfix'>
+  <view class='sponsor_text1'>赞助商</view>
+  <view class='sponsor_text2'>{{dataList.agency_name}}</view>
+</view>
+
+<!-- 按钮状态 -->
+<view class='btn_group'>
+  <!-- <view class='btn1'>帮忙砍价</view>
+   <view class='btn2'>去抢购></view> -->
+  <view class='success'>您已成功抢购该商品！</view>
+  <view class='text' wx:if="{{!showBack}}">请选择收货地址</view>
+  <view class='address_btn' wx:if="{{!showBack}}">
+    <image class='address_btn_img' src='../../images/address_icon.png' mode="widthFix" />
+    <text class='address_btn_text' bindtap='chooseAddress'>选择收货地址</text>
+  </view>
+
+  <view class='address_change' wx:if="{{showBack}}">
+    <view class='people_info'>
+      <text class='people_name'>{{address.consignee}}</text>
+      <text class='people_tel'>{{address.mobile}}</text>
+    </view>
+    <text class='address_info'>{{address.province}} {{address.city}} {{address.district}} {{address.address}}</text>
+  </view>
+  <button class="backBtn" wx:if="{{showBack}}" bindtap='backHome'>返回首页</button>
+</view>
+
+<!-- 已抢购头像 -->
+<view class='people_group'>
+  <view class='people_text'>
+    <text>帮我砍价的人（<text class='people_text_num'>{{userList.length}}</text>人）</text>
+  </view>
+  <view class='people_list'>
+    <image class='people_list_img' src="{{item.headimg}}" wx:for="{{userList}}" wx:key="index" />
+  </view>
+</view>

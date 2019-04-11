@@ -1,0 +1,16 @@
+<!--pages/nearby_merchant_info.wxml-->
+<view class='merchant_info'>
+ <image src="{{merchantInfo.merchant_logo}}" class="merchant_info_img" mode='widthFix' style='width:100%; overflow:show;'/>
+ <view class='merchant_info_box'>
+  <text class='merchant_info_title'>{{merchantInfo.merchant_trade_name}}</text>
+  <image class="liveness_img" src="{{liveness_img}}"/>
+  <text class='merchant_destance'>{{distance}}米</text>
+ </view>  
+ <view class='merchant_address_box'>
+  <text class='merchant_info_address'>{{merchantInfo.merchant_address}}</text>
+  <view class='gps' data-lng='{{merchantInfo.longitude}}' data-lat='{{merchantInfo.latitude}}' data-name='{{merchantInfo.merchant_trade_name}}' data-address='{{merchantInfo.merchant_address}}' catchtap='navigation'>
+    <image class="gps_img" src="{{gps_img}}"/>
+    <text class='gps_text'>导航</text>
+  </view>
+ </view> 
+</view>

@@ -1,0 +1,64 @@
+/* pages/add_merchant/add_merchant.wxss */
+page{
+  background-color: #F5F5F5;
+}
+.box{
+  background-color: #ffffff;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  width: 95vw;
+  margin-left: 5vw;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #F5F5F5;
+  font-size: 26rpx;
+  padding-right: 5vw;
+  color:#B3B3B3;
+}
+.flex>view:first-child{
+  font-weight: bold;
+  margin-right: 40rpx;
+  color: #000;
+  width: 18%;
+}
+.activity_introduce{
+  background: #fff;
+  margin: 20rpx 0;
+}
+.flex_start{
+  align-self: flex-start;
+}
+textarea{
+  max-width: 70%;
+  position: relative;
+  height: 100rpx;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: 30rpx 30rpx;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+}
+.btn1{
+  margin: 0 auto;
+  background-color: #FF1A1A;
+  width: 400rpx;
+  color: #ffffff;
+  padding: 20rpx 30rpx;
+  border-radius: 50rpx;
+}
+.btn2{
+  margin: 0 auto;
+  background-color: #B3B3B3;
+  width: 400rpx;
+  color: #000000;
+  padding: 20rpx 30rpx;
+  border-radius: 50rpx;
+}

@@ -1,0 +1,65 @@
+/* pages/dealers_create_activity/dealers_create_activity.wxss */
+@import '/pages/dealers_create_template/dealers_create_template.wxss';
+view{
+  box-sizing: border-box;
+}
+.container{
+  background: #F5F5F5;
+  border-top: 1px solid #F5F5F5;
+  padding-bottom: 40rpx;
+}
+.head{
+  margin: 20rpx 0;
+  background: #fff;
+}
+.head>view>view{
+  color: #000;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  width: 95vw;
+  margin-left: 5vw;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #F5F5F5;
+  font-size: 26rpx;
+  padding-right: 5vw;
+  color:#B3B3B3;
+}
+.flex>view:first-child{
+  font-weight: bold;
+  margin-right: 40rpx;
+  color: #000;
+  width: 18%;
+}
+textarea{
+  max-width: 70%;
+  position: relative;
+}
+.flex_start{
+  align-self: flex-start;
+}
+.activity_set,.activity_introduce{
+  background: #fff;
+  margin: 20rpx 0;
+}
+.btn{
+  width: 90vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 45rpx;
+  background: #FF1A1A;
+  margin: 40rpx auto;
+}
+.add_goods{
+  text-align: center;
+  background: #F5F5F5;
+  margin-bottom: 20rpx;
+  font-size: 26rpx;
+  color: #4429F2;
+}
+.item{
+  margin-bottom: 20rpx;
+}

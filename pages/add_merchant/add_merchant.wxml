@@ -1,0 +1,28 @@
+<!--pages/add_merchant/add_merchant.wxml-->
+<view class='box'>
+  <view class='flex'>
+    <view>商户名称</view>
+    <input placeholder='商户名称' value='{{activity_name}}' bindinput='getActivity_name'></input>
+  </view>
+  <view class='flex'>
+    <view>联系人</view>
+    <input placeholder='联系人' value='{{activity_name}}' bindinput='getActivity_name'></input>
+  </view>
+  <view class='flex'>
+    <view>联系电话</view>
+    <input placeholder='联系电话' value='{{activity_name}}' bindinput='getActivity_name' maxlength='11'></input>
+  </view>
+</view>
+
+<view class='activity_introduce'>
+  <view class='flex'>
+    <view class='flex_start'>商户地址</view>
+    <textarea placeholder="商户地址" value="{{textVal}}" bindinput='textVal'></textarea>
+  </view>
+</view>
+
+
+<view class='footer'>
+    <view class='btn1'>保存</view>
+    <view class='btn2'>删除商户</view>
+</view>
